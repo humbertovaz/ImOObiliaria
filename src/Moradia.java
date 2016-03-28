@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ImOObiliaria.src;
+package src;
 
 /**
  *
@@ -21,19 +21,19 @@ public class Moradia extends Imovel {
     private int areaTerreno;
     private int nrQuartos;
 
-    public Moradia(int tipo, int area, int areaTerreno, int nrQuartos) {
-        this.tipo = tipo;
-        this.area = area;
-        this.areaTerreno = areaTerreno;
-        this.nrQuartos = nrQuartos;
-    }
-    
     public Moradia(){
         super("", 0, 0);
         this.tipo = 0;
         this.area = 0;
         this.areaTerreno=0;
         this.nrQuartos = 0;
+    }
+    
+    public Moradia(int tipo, int area, int areaTerreno, int nrQuartos){
+        this.tipo = tipo;
+        this.area = area;
+        this.areaTerreno = areaTerreno;
+        this.nrQuartos = nrQuartos;
     }
     
      public Moradia (Moradia o){

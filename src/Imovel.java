@@ -1,6 +1,7 @@
-import static com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.Int;
+package src;
+
 import java.util.*;
-package ImOObiliaria.src;
+ 
 
 /**
  *
@@ -11,10 +12,15 @@ package ImOObiliaria.src;
 
 public class Imovel {
     private String rua;
-    private Int precoPedido;
-    private Int precoAceite;
+    private int precoPedido;
+    private int precoAceite;
 
-    public Imovel(String rua, Int precoPedido, Int precoAceite) {
+    public Imovel()
+    {
+        this.rua = "";
+    }
+    
+    public Imovel(String rua, int precoPedido, int precoAceite) {
         this.rua = rua;
         this.precoPedido = precoPedido;
         this.precoAceite = precoAceite;
@@ -30,11 +36,11 @@ public class Imovel {
         return rua;
     }
 
-    public Int getPrecoPedido() {
+    public int getPrecoPedido() {
         return precoPedido;
     }
 
-    public Int getPrecoAceite() {
+    public int getPrecoAceite() {
         return precoAceite;
     }
 
@@ -42,11 +48,11 @@ public class Imovel {
         this.rua = rua;
     }
 
-    public void setPrecoPedido(Int precoPedido) {
+    public void setPrecoPedido(int precoPedido) {
         this.precoPedido = precoPedido;
     }
 
-    public void setPrecoAceite(Int precoAceite) {
+    public void setPrecoAceite(int precoAceite) {
         this.precoAceite = precoAceite;
     }
 
@@ -56,8 +62,8 @@ public class Imovel {
     }
     
     
-    @Override
-    public Boolean equals(Object o){
+
+    public boolean equals(Object o){
     if (this==o) return true;
     if (o==null || o.getClass()!=this.getClass()) return false;
     
