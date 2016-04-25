@@ -1,6 +1,9 @@
 # ImOObiliaria
 
 ## To do List:
-[] Classe Imóvel
-[] Classe Ator
-[] Definir mais classes 
+[x] Classe Imóvel
+[x] Classe Ator
+[x] Classe Vendedor
+[ ] Classes Excecao
+[ ] Classe Imoobiliaria/ main??
+[] Definir mais classes ?
