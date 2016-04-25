@@ -1,7 +1,7 @@
 package src;
 
-public class Actor{
-	
+public abstract class Actor{
+
 	private String email; /*Identifica o utilizador*/
 	private String nome;
 	private String password;
@@ -63,9 +63,10 @@ public class Actor{
 			   this.morada.equals(obj.getMorada()) &&
 			   this.dataNasc.equals(obj.getDataNasc());
 	}
-
+/*
 	public Actor clone()
 	{
 		return new Actor(this);
 	}
+*/
 }
