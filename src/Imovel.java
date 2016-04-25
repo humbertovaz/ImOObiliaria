@@ -15,9 +15,12 @@ public class Imovel {
     private int precoPedido;
     private int precoAceite;
 
-    public Imovel()
-    {
-        this.rua = "";
+    
+    public Imovel(){
+        this.rua="";
+        this.precoPedido=0;
+        this.precoAceite=0;
+        
     }
     
     public Imovel(String rua, int precoPedido, int precoAceite) {
@@ -56,13 +59,12 @@ public class Imovel {
         this.precoAceite = precoAceite;
     }
 
+  
+    
+    /*
+     Equals clone e toString
+    */
     @Override
-    public String toString() {
-        return "Imovel " + "rua=" + rua + " precoPedido=" + precoPedido + " precoAceite=" + precoAceite;
-    }
-    
-    
-
     public boolean equals(Object o){
     if (this==o) return true;
     if (o==null || o.getClass()!=this.getClass()) return false;
@@ -78,4 +80,11 @@ public class Imovel {
     Imovel novo = new Imovel(this);
     return novo;
     }
+    
+      @Override
+    public String toString() {
+        return "Imovel " + "rua=" + rua + " precoPedido=" + precoPedido + " precoAceite=" + precoAceite;
+    }
+}
+
 }
