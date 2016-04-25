@@ -21,19 +21,20 @@ public class Moradia extends Imovel {
     private int areaTerreno;
     private int nrQuartos;
 
+    public Moradia(int tipo, int area, int areaTerreno, int nrQuartos) {
+        super();
+        this.tipo = tipo;
+        this.area = area;
+        this.areaTerreno = areaTerreno;
+        this.nrQuartos = nrQuartos;
+    }
+    
     public Moradia(){
         super("", 0, 0);
         this.tipo = 0;
         this.area = 0;
         this.areaTerreno=0;
         this.nrQuartos = 0;
-    }
-    
-    public Moradia(int tipo, int area, int areaTerreno, int nrQuartos){
-        this.tipo = tipo;
-        this.area = area;
-        this.areaTerreno = areaTerreno;
-        this.nrQuartos = nrQuartos;
     }
     
      public Moradia (Moradia o){
@@ -44,46 +45,54 @@ public class Moradia extends Imovel {
         this.nrQuartos = o.getNrQuartos();
        
     }
-    
-    
     // gets e sets
     public int getTipo() {
         return tipo;
     }
-
     public int getArea() {
         return area;
     }
-
     public int getAreaTerreno() {
         return areaTerreno;
     }
-
     public int getNrQuartos() {
         return nrQuartos;
     }
-
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
-
     public void setArea(int area) {
         this.area = area;
     }
-
     public void setAreaTerreno(int areaTerreno) {
         this.areaTerreno = areaTerreno;
     }
-
     public void setNrQuartos(int nrQuartos) {
         this.nrQuartos = nrQuartos;
     }
-
+    /*
+        equals clone e toString
+    */
+    @Override
+    public boolean equals( Object o ){
+     if (this== o) return true;
+     if (this== null || o.getClass()!=this.getClass()) return false;
+     
+     Moradia moradia = (Moradia) o;
+     
+     return (moradia.getTipo()==this.getTipo() 
+             && moradia.getArea()==this.getArea() 
+             && moradia.getAreaTerreno()==this.getAreaTerreno() 
+             && moradia.getNrQuartos()==this.getNrQuartos());
+    }
+    @Override
+    public Moradia clone(){
+    Moradia moradia = new Moradia(this);
+    return moradia;
+    }
+    
     @Override
     public String toString() {
         return "Moradia " + "tipo=" + tipo + ", area=" + area + ", areaTerreno=" + areaTerreno + ", nrQuartos=" + nrQuartos;
     }
-    
-    
-    
 }
