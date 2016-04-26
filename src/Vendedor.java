@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import java.util.*;
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -10,9 +9,9 @@ import java.util.*;
 /**
  *
  * O vendedor é a entidade responsável pela gestão dos anúncios de imóveis para
-venda. O comprador deverá, assim, conter a seguinte informação adicional:
- Portfólio de imóveis em venda;
- Histórico de imóveis vendidos;
+* venda. O comprador deverá, assim, conter a seguinte informação adicional:
+*  Portfólio de imóveis em venda;
+*  Histórico de imóveis vendidos;
  */
 public class Vendedor extends Actor{
     ArrayList <Imovel> imoveisEmVenda;
@@ -111,12 +110,5 @@ public class Vendedor extends Actor{
     }
     
      
-=======
-package src;
 
-import java.util.ArrayList;
-
-public class Vendedor extends Actor{
-
->>>>>>> origin/master
 }

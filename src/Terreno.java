@@ -9,10 +9,10 @@ import java.util.*;
 /**
  *
  * Um terreno representa um espaço com área disponível para construção. É de notar
-que existem terrenos apropriados para construção de habitação, ou apenas para
-construção de armazéns. É ainda importante saber qual o diâmetro das canalizações
-(em milímetros), assim como os kWh máximo suportados pela rede elétrica, se
-instalados, bem como se existe acesso à rede de esgotos.
+* que existem terrenos apropriados para construção de habitação, ou apenas para
+* construção de armazéns. É ainda importante saber qual o diâmetro das canalizações
+* (em milímetros), assim como os kWh máximo suportados pela rede elétrica, se
+* instalados, bem como se existe acesso à rede de esgotos.
  */
 public class Terreno extends Imovel{
     int area ;
