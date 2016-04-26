@@ -1,12 +1,9 @@
-package src;
-
 import java.util.*;
- 
+//package ImOObiliaria;
 
 /**
  *
  * Todos os imóveis terão a si associadas a rua em que se situam, o preço pedido e o preço mínimo aceite pelo proprietário (que não deverá ser apresentado aos compradores).
-
  */
 
 
@@ -64,6 +61,8 @@ public class Imovel {
     /*
      Equals clone e toString
     */
+    
+    //Equals nao sei se será necessário (herança)
     @Override
     public boolean equals(Object o){
     if (this==o) return true;
@@ -81,10 +80,8 @@ public class Imovel {
     return novo;
     }
     
-      @Override
+    @Override
     public String toString() {
         return "Imovel " + "rua=" + rua + " precoPedido=" + precoPedido + " precoAceite=" + precoAceite;
     }
-}
-
 }

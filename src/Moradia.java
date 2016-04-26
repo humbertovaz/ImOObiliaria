@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+<<<<<<< HEAD
+//package ImOObiliaria;
+=======
 package src;
+>>>>>>> origin/master
 
 /**
  *
@@ -21,8 +25,13 @@ public class Moradia extends Imovel {
     private int areaTerreno;
     private int nrQuartos;
 
+<<<<<<< HEAD
+    public Moradia(String rua, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
+        super(rua,precoPedido,precoAceite);
+=======
     public Moradia(int tipo, int area, int areaTerreno, int nrQuartos) {
         super();
+>>>>>>> origin/master
         this.tipo = tipo;
         this.area = area;
         this.areaTerreno = areaTerreno;
@@ -38,7 +47,7 @@ public class Moradia extends Imovel {
     }
     
      public Moradia (Moradia o){
-        super(o.getRua(), o.getPrecoPedido(), o.getPrecoAceite());
+        super(o);
         this.tipo = o.getTipo();
         this.area = o.getArea();
         this.areaTerreno=o.getAreaTerreno();

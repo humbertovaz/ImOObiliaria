@@ -1,11 +1,11 @@
 import java.util.*;
-package src;
+//package src;
 
 /**
  *  Um apartamento representa um imóvel inserido num prédio, como tal sem jardim. São consideradas no mínimo, as seguintes características:
-• o tipo (Simples, Duplex, Triplex) • a área total
-• o número de quartos e WCs
-• o número da porta e o andar • se possui, ou não, garagem
+ * • o tipo (Simples, Duplex, Triplex) • a área total
+ * • o número de quartos e WCs
+ * • o número da porta e o andar • se possui, ou não, garagem
  * @author humbertovaz
  */
 public class Apartamento extends Imovel {
@@ -18,14 +18,14 @@ public class Apartamento extends Imovel {
     private boolean garagem;
 
     public Apartamento(){
-        super("", 0, 0);
+        super();
         this.tipo = 0;
         this.area = 0;
         this.nrQuartos = 0;
         this.nrWC = 0;
         this.nrPorta = 0;
         this.andar = 0;
-        this.garagem = true;
+        this.garagem = false;
         
     }
     
