@@ -10,30 +10,36 @@ import java.util.*;
 
 
 public class Imovel {
-    private String rua;
+    private String id;
+	private String rua;
     private int precoPedido;
     private int precoAceite;
 
     
     public Imovel(){
-        this.rua="";
+		this.id = this.rua = "";
         this.precoPedido=0;
         this.precoAceite=0;
         
     }
     
-    public Imovel(String rua, int precoPedido, int precoAceite) {
-        this.rua = rua;
+    public Imovel(String id,String rua, int precoPedido, int precoAceite) {
+        this.id = id;
+		this.rua = rua;
         this.precoPedido = precoPedido;
         this.precoAceite = precoAceite;
     }
     
     public Imovel (Imovel o){
-        this.rua=o.getRua();
+        this.id = o.getId();
+		this.rua=o.getRua();
         this.precoPedido=o.getPrecoPedido();
         this.precoAceite=o.getPrecoAceite();
     }
 //gets e sets
+	
+	public String getId() { return id;}
+
     public String getRua() {
         return rua;
     }
@@ -45,6 +51,8 @@ public class Imovel {
     public int getPrecoAceite() {
         return precoAceite;
     }
+
+	public void setId(String id) { this.id = id;}
 
     public void setRua(String rua) {
         this.rua = rua;
@@ -73,7 +81,7 @@ public class Imovel {
     Imovel i;
         i = (Imovel) o;
     
-    return(this.getRua().equals(i.getRua()) && this.getPrecoPedido()==i.getPrecoPedido() && this.getPrecoAceite()==i.getPrecoAceite());
+    return(id.equals(i.getId()) && rua.equals(i.getRua()) && precoPedido==i.getPrecoPedido() && precoAceite==i.getPrecoAceite());
     }
     
     @Override
@@ -84,6 +92,11 @@ public class Imovel {
     
     @Override
     public String toString() {
-        return "Imovel " + "rua=" + rua + " precoPedido=" + precoPedido + " precoAceite=" + precoAceite;
-    }
+		StringBuilder str = new StringBuilder("Imovel ");
+        str.append("id: "); str.append(id);
+		str.append("rua: "); str.append(rua);
+		str.append("precoPedido: "); str.append(precoPedido);
+		str.append("precoAceite: "); str.append( precoAceite);
+    	return str.toString();
+	}
 }

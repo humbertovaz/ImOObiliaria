@@ -5,28 +5,32 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.Iterator;
+import java.util.stream.Collectors;
 
 public class Comprador extends Actor{
 
-	/*Set<Imovel> favoritos;*/
+	Set<Imovel> catalogo;
 	Set<String> favoritos;
 
 	public Comprador()
 	{
 		super();
+		catalogo = new TreeSet<>();
 		favoritos = new TreeSet<>();
 	}
 
 	public Comprador(String email, String nome, String password, String morada, GregorianCalendar dataNasc)
 	{
 		super(email, nome, password, morada, dataNasc);
+		catalogo = new TreeSet<>();
 		favoritos = new TreeSet<>();
 	}
 
 	public Comprador(Comprador c)
 	{
 		super(c.getEmail(), c.getNome(), c.getPassword(), c.getMorada(), c.getDataNascimento());
-		this.favoritos = c.getFavoritos();
+		this.catalogo = c.getCatalogo();
+		this.favoritos = c.getFavoritosS();
 	}
 
 	public void setFavorito(String idImovel)
@@ -34,30 +38,36 @@ public class Comprador extends Actor{
 		favoritos.add(idImovel);
 	}
 
+	public void addImovelCat(Imovel i)
+	{
+		catalogo.add(i.clone());
+	}
+
 	public void setFavoritos(TreeSet<String> favs)
 	{
 		favoritos.clear();
 		favs.forEach(i -> this.favoritos.add(i));
 	}
+
 /*
 	Teremos que incluir qualquer coisa para podermos ir buscar os imoveis
 	correspondentes aos id's do nosso set
+*/
 
 	public TreeSet<Imovel> getFavoritos()
 	{
-		TreeSet<String> nova = new TreeSet<>();
-		Iterator<String> it = favoritos.iterator();
-		while(it.hasNext())
-			nova.add(it.next());
-
-		return nova;
+		return catalogo.stream().filter(i -> favoritos.contains(i.getId())).collect(Collectors.toCollection(TreeSet::new));
 	}
-*/
-	
-	public TreeSet<String> getFavoritos()
+
+	public TreeSet<Imovel> getCatalogo()
 	{
-		TreeSet<String> nova = new TreeSet<>(favoritos);
-		return nova; /*Não precisamos de fazer deep copy porque strings são imutáveis*/
+		return catalogo.stream().map(i -> i.clone()).collect(Collectors.toCollection(TreeSet::new));
+	}
+
+	public TreeSet<String> getFavoritosS()
+	{
+		/*Não é preciso fazer deep copy por que é um TreeSet de strings, e as strings são imutáveis*/
+		return new TreeSet<>(favoritos);
 	}
 
 	public Comprador clone()
