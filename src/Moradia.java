@@ -1,5 +1,7 @@
-import java.util.*;
 package src;
+
+import java.util.*;
+
 
 
 /**
@@ -17,8 +19,8 @@ public class Moradia extends Imovel {
     private int areaTerreno;
     private int nrQuartos;
 
-    public Moradia(String rua, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
-        super(rua,precoPedido,precoAceite);
+    public Moradia(String id,String rua, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
+        super(id, rua,precoPedido,precoAceite);
         this.tipo = tipo;
         this.area = area;
         this.areaTerreno = areaTerreno;
@@ -26,7 +28,7 @@ public class Moradia extends Imovel {
     }
     
     public Moradia(){
-        super("", 0, 0);
+        super("","", 0, 0);
         this.tipo = 0;
         this.area = 0;
         this.areaTerreno=0;

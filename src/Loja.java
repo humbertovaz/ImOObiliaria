@@ -1,6 +1,8 @@
+package src;
+
 import java.util.*;
 
-//package ImOObiliaria;
+
 
 /**
  *
@@ -24,8 +26,8 @@ public class Loja extends Imovel {
         this.numeroDePorta = 0;
     }
     
-    public Loja(String rua,int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta) {
-        super(rua,precoPedido,precoAceite);
+    public Loja(String id, String rua,int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta) {
+        super(id, rua,precoPedido,precoAceite);
         this.area = area;
         this.wc = wc;
         this.tipoNegocio = tipoNegocio;

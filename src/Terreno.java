@@ -1,10 +1,6 @@
+package src;
+
 import java.util.*;
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-// package ImOObiliaria;
 
 /**
  *
@@ -14,6 +10,7 @@ import java.util.*;
 * (em milímetros), assim como os kWh máximo suportados pela rede elétrica, se
 * instalados, bem como se existe acesso à rede de esgotos.
  */
+
 public class Terreno extends Imovel{
     int area ;
     int construcao; // 1 - Habitacao 2 - Armazem
@@ -33,8 +30,8 @@ public class Terreno extends Imovel{
         this.redeEsgotos=0;
     }
     
-    public Terreno(String rua, int precoPedido, int precoAceite, int area, int construcao, double diametro, double kWhmax, int redeEsgotos) {
-        super(rua,precoPedido,precoAceite);
+    public Terreno(String id,String rua, int precoPedido, int precoAceite, int area, int construcao, double diametro, double kWhmax, int redeEsgotos) {
+        super(id,rua,precoPedido,precoAceite);
         this.area = area;
         this.construcao = construcao;
         this.diametro = diametro;
