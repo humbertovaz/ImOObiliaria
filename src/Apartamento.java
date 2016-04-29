@@ -1,14 +1,12 @@
 package src;
 
-import java.util.*;
-
 /**
  *  Um apartamento representa um imóvel inserido num prédio, como tal sem jardim. São consideradas no mínimo, as seguintes características:
  * • o tipo (Simples, Duplex, Triplex) • a área total
  * • o número de quartos e WCs
  * • o número da porta e o andar • se possui, ou não, garagem
- * @author humbertovaz
  */
+
 public class Apartamento extends Imovel{
     private int tipo; // (1 -Simples,2- Duplex,3- Triplex)
     private int area;
@@ -118,7 +116,8 @@ public class Apartamento extends Imovel{
     if (o==null || o.getClass()!=this.getClass()) return false;
     Apartamento ap = (Apartamento) o;
     
-    return (ap.getTipo()==this.getTipo() 
+    return (super.equals(ap)
+            && ap.getTipo()==this.getTipo() 
             && ap.getArea()==this.getArea() 
             && ap.getNrQuartos()==this.getNrQuartos() 
             && ap.getNrWC()==this.getNrWC() 
@@ -127,12 +126,19 @@ public class Apartamento extends Imovel{
     }
     @Override
     public Apartamento clone(){
-        Apartamento apartamento = new Apartamento(this);
-        return apartamento;
+        return new Apartamento(this);
     }
      @Override
     public String toString() {
-        return "Apartamento " + "tipo=" + tipo + ", area=" + area + ", nrQuartos=" + nrQuartos + ", nrWC=" + nrWC + ", nrPorta=" + nrPorta + ", andar=" + andar + ", garagem=" + garagem;
+        StringBuilder str = new StringBuilder("Apartamento ");
+        str.append("tipo "); str.append(tipo); 
+        str.append("area "); str.append(area);
+        str.append("nrQuartos "); str.append(nrQuartos);
+        str.append("nrWC "); str.append(nrWC);
+        str.append("nrPorta "); str.append(nrPorta);
+        str.append("andar "); str.append(andar);
+        str.append("garagem "); str.append(garagem);
+        return str.toString();
     }
 
 }

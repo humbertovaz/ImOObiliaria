@@ -3,7 +3,7 @@ package src;
 
 import java.util.GregorianCalendar;
 import java.util.List;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.Set;
 import java.util.TreeSet;
@@ -23,7 +23,7 @@ import java.util.TreeSet;
 *  Portfólio de imóveis em venda;
 *  Histórico de imóveis vendidos;
  */
-public class Vendedor extends Actor{
+public class Vendedor extends Utilizador{
     Set<Imovel> imoveisEmVenda;
     List<Imovel> imoveisVendidos;
     List<Consulta> consultas;
@@ -35,14 +35,14 @@ public class Vendedor extends Actor{
     public Vendedor()
 	{
 		super();
-		consultas = new LinkedList<>();
+		consultas = new ArrayList<>();
 		imoveisEmVenda = new TreeSet<>();
 	}
 
 	public Vendedor(String email, String nome, String password, String morada, GregorianCalendar dataNasc)
 	{
 		super(email, nome, password, morada, dataNasc);
-		consultas = new LinkedList<>();
+		consultas = new ArrayList<>();
 		imoveisEmVenda = new TreeSet<>();
 	}
 
@@ -53,9 +53,9 @@ public class Vendedor extends Actor{
 		imoveisEmVenda = v.getImoveis();
 	}
 
-	public LinkedList<Consulta> getConsultas()
+	public List<Consulta> getConsultas()
 	{
-		return consultas.stream().map(c -> c.clone()).collect(Collectors.toCollection(LinkedList::new));
+		 return consultas.stream().skip(Math.max(0, consultas.size()-10)).map(c -> c.clone()).collect(Collectors.toCollection(ArrayList::new));
 	}
 	
 	public TreeSet<Imovel> getImoveis()
@@ -75,7 +75,7 @@ public class Vendedor extends Actor{
 	
 	public String toString()
 	{
-		String s = this.toString();
+		String s = super.toString();
 		/* TODO */
 		return s;
 	}

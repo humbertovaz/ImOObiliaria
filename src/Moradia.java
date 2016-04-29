@@ -87,20 +87,25 @@ public class Moradia extends Imovel {
      
      Moradia moradia = (Moradia) o;
      
-     return (moradia.getTipo()==this.getTipo() 
+     return (super.equals(moradia)
+             && moradia.getTipo()==this.getTipo() 
              && moradia.getArea()==this.getArea() 
              && moradia.getAreaTerreno()==this.getAreaTerreno() 
              && moradia.getNrQuartos()==this.getNrQuartos());
     }
     @Override
     public Moradia clone(){
-    Moradia moradia = new Moradia(this);
-    return moradia;
+        return new Moradia(this);
     }
     
     @Override
     public String toString() {
-        return "Moradia " + "tipo=" + tipo + ", area=" + area + ", areaTerreno=" + areaTerreno + ", nrQuartos=" + nrQuartos;
+        StringBuilder str = new StringBuilder("Moradia ");
+        str.append("tipo= ").append(tipo);
+        str.append("\narea= ").append(area);
+        str.append("\nareaTerreno= ").append(areaTerreno);
+        str.append("\nnrQuartos= ").append(nrQuartos);
+        return str.toString();
     }
     
     

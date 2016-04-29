@@ -1,9 +1,5 @@
 package src;
 
-import java.util.*;
-
-
-
 /**
  *
  * Uma loja representa um espaço destinado a diferentes tipos de negócio. Deve ficar
@@ -81,18 +77,13 @@ public class Loja extends Imovel {
         this.numeroDePorta = numeroDePorta;
     }
     
-    
-    /*
-    int area;
-    int wc; //1 -Sim, 0-Nao;
-    String tipoNegocio;
-    int numeroDePorta;
-
-    */
-    public boolean equals(Loja l){
-        if (l==this) return true;
-        if (l==null || l.getClass()!=this.getClass())return false;
-        return (l.getRua().equals(this.getRua())
+    public boolean equals(Object o){
+        if (o==this) return true;
+        if (o==null || o.getClass()!=this.getClass())return false;
+        
+        Loja l = (Loja) o;
+        return (super.equals(l)
+               && l.getRua().equals(this.getRua())
                && l.getPrecoPedido()==this.getPrecoPedido()
                && l.getPrecoAceite()==this.getPrecoAceite()
                && l.getArea()==this.getArea()

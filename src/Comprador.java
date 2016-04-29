@@ -7,40 +7,31 @@ import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.stream.Collectors;
 
-public class Comprador extends Actor{
+public class Comprador extends Utilizador{
 
-	Set<Imovel> catalogo;
 	Set<String> favoritos;
 
 	public Comprador()
 	{
 		super();
-		catalogo = new TreeSet<>();
 		favoritos = new TreeSet<>();
 	}
 
 	public Comprador(String email, String nome, String password, String morada, GregorianCalendar dataNasc)
 	{
 		super(email, nome, password, morada, dataNasc);
-		catalogo = new TreeSet<>();
 		favoritos = new TreeSet<>();
 	}
 
 	public Comprador(Comprador c)
 	{
 		super(c.getEmail(), c.getNome(), c.getPassword(), c.getMorada(), c.getDataNascimento());
-		this.catalogo = c.getCatalogo();
 		this.favoritos = c.getFavoritosS();
 	}
 
 	public void setFavorito(String idImovel)
 	{
 		favoritos.add(idImovel);
-	}
-
-	public void addImovelCat(Imovel i)
-	{
-		catalogo.add(i.clone());
 	}
 
 	public void setFavoritos(TreeSet<String> favs)
@@ -53,16 +44,6 @@ public class Comprador extends Actor{
 	Teremos que incluir qualquer coisa para podermos ir buscar os imoveis
 	correspondentes aos id's do nosso set
 */
-
-	public TreeSet<Imovel> getFavoritos()
-	{
-		return catalogo.stream().filter(i -> favoritos.contains(i.getId())).collect(Collectors.toCollection(TreeSet::new));
-	}
-
-	public TreeSet<Imovel> getCatalogo()
-	{
-		return catalogo.stream().map(i -> i.clone()).collect(Collectors.toCollection(TreeSet::new));
-	}
 
 	public TreeSet<String> getFavoritosS()
 	{
@@ -84,7 +65,7 @@ public class Comprador extends Actor{
 
 	public String toString()
 	{
-		String s = this.toString();
+		String s = super.toString();
 		/*ver se é preciso passar o treeSet para string também*/
 		return s;
 	}

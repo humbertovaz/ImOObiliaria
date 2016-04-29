@@ -1,7 +1,5 @@
 package src;
 
-import java.util.*;
-
 /**
  *
  * Um terreno representa um espaço com área disponível para construção. É de notar
@@ -104,10 +102,13 @@ public class Terreno extends Imovel{
     double kWhmax; 
     int redeEsgotos;// 1-Sim 0-Não
     */
-    public boolean equals(Terreno t){
-        if (t==this) return true;
-        if (t==null || t.getClass()!=this.getClass())return false;
-        return (t.getRua().equals(this.getRua())
+    public boolean equals(Object o){
+        if (o==this) return true;
+        if (o==null || o.getClass()!=this.getClass())return false;
+ 
+        Terreno t = (Terreno) o;
+        return (super.equals(t)
+               && t.getRua().equals(this.getRua())
                && t.getPrecoPedido()==this.getPrecoPedido()
                && t.getPrecoAceite()==this.getPrecoAceite()
                && t.getArea()==this.getArea()

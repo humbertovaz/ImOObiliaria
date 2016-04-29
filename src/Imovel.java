@@ -11,13 +11,13 @@ import java.util.*;
 
 public class Imovel {
     private String id;
-	private String rua;
+    private String rua;
     private int precoPedido;
     private int precoAceite;
 
     
     public Imovel(){
-		this.id = this.rua = "";
+        this.id = this.rua = "";
         this.precoPedido=0;
         this.precoAceite=0;
         
@@ -25,20 +25,20 @@ public class Imovel {
     
     public Imovel(String id,String rua, int precoPedido, int precoAceite) {
         this.id = id;
-		this.rua = rua;
+        this.rua = rua;
         this.precoPedido = precoPedido;
         this.precoAceite = precoAceite;
     }
     
     public Imovel (Imovel o){
         this.id = o.getId();
-		this.rua=o.getRua();
+        this.rua=o.getRua();
         this.precoPedido=o.getPrecoPedido();
         this.precoAceite=o.getPrecoAceite();
     }
 //gets e sets
-	
-	public String getId() { return id;}
+    
+    public String getId() { return id;}
 
     public String getRua() {
         return rua;
@@ -52,7 +52,7 @@ public class Imovel {
         return precoAceite;
     }
 
-	public void setId(String id) { this.id = id;}
+    public void setId(String id) { this.id = id;}
 
     public void setRua(String rua) {
         this.rua = rua;
@@ -72,31 +72,31 @@ public class Imovel {
      Equals clone e toString
     */
     
-    //Equals nao sei se será necessário (herança)
     @Override
     public boolean equals(Object o){
     if (this==o) return true;
     if (o==null || o.getClass()!=this.getClass()) return false;
     
-    Imovel i;
-        i = (Imovel) o;
+    Imovel i = (Imovel) o;
     
-    return(id.equals(i.getId()) && rua.equals(i.getRua()) && precoPedido==i.getPrecoPedido() && precoAceite==i.getPrecoAceite());
+    return(id.equals(i.getId()) && 
+           rua.equals(i.getRua()) && 
+           precoPedido==i.getPrecoPedido() && 
+           precoAceite==i.getPrecoAceite());
     }
     
     @Override
     public Imovel clone (){
-    Imovel novo = new Imovel(this);
-    return novo;
+        return new Imovel(this);
     }
     
     @Override
     public String toString() {
-		StringBuilder str = new StringBuilder("Imovel ");
+        StringBuilder str = new StringBuilder("Imovel ");
         str.append("id: "); str.append(id);
-		str.append("rua: "); str.append(rua);
-		str.append("precoPedido: "); str.append(precoPedido);
-		str.append("precoAceite: "); str.append( precoAceite);
-    	return str.toString();
-	}
+        str.append("rua: "); str.append(rua);
+        str.append("precoPedido: "); str.append(precoPedido);
+        str.append("precoAceite: "); str.append( precoAceite);
+        return str.toString();
+    }
 }
