@@ -40,7 +40,7 @@ public class Utilizador {
         this.nome = nome;
         this.password = password;
         this.morada = morada;
-        this.dataNascimento = dataNascimento;
+        this.dataNascimento = (GregorianCalendar) dataNascimento.clone();
     }
 
     public Utilizador(Utilizador a){
@@ -91,6 +91,6 @@ public class Utilizador {
 			   this.nome.equals(obj.getNome()) &&
 			   this.password.equals(obj.getPassword()) &&
 			   this.morada.equals(obj.getMorada()) &&
-			   this.dataNascimento.getTime().equals(obj.getDataNascimento().getTime());
+			   this.dataNascimento.equals(obj.getDataNascimento());
 	}
 }

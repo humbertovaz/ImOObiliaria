@@ -19,7 +19,7 @@ public class Consulta
     {
         imovel = im.clone();
         this.email = email;
-        data = d;
+        data =(GregorianCalendar) d.clone();
     }
     
     public Consulta(Consulta c)
@@ -29,11 +29,11 @@ public class Consulta
     
     public Imovel getImovel() { return imovel.clone(); }
     public String getEmail() { return email; }
-    public GregorianCalendar getData() { return data; }
+    public GregorianCalendar getData() { return (GregorianCalendar) data.clone(); }
 
     public void setImovel(Imovel i) { imovel = i.clone(); }
     public void setEmail(String e) { email = e; }
-    public void setData(GregorianCalendar d) { data = d; }
+    public void setData(GregorianCalendar d) { data = (GregorianCalendar) d.clone(); }
     
     public Consulta clone()
     {
@@ -48,6 +48,6 @@ public class Consulta
         Consulta obj = (Consulta) o;
         return imovel.equals(obj.getImovel()) &&
                email.equals(obj.getEmail()) &&
-               data.getTime().equals(obj.getData().getTime());               
+               data.equals(obj.getData());               
     }
 }
