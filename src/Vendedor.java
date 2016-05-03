@@ -55,12 +55,17 @@ public class Vendedor extends Utilizador{
 
 	public List<Consulta> getConsultas()
 	{
-		 return consultas.stream().skip(Math.max(0, consultas.size()-10)).map(c -> c.clone()).collect(Collectors.toCollection(ArrayList::new));
+		 return consultas.stream().skip(Math.max(0, consultas.size()-10)).map(c -> c.clone()).collect(Collectors.toList());
 	}
 	
 	public TreeSet<Imovel> getImoveis()
 	{
 		return imoveisEmVenda.stream().map(i -> i.clone()).collect(Collectors.toCollection(TreeSet::new));
+	}
+
+	public void registaImovel(Imovel im)
+	{
+		imoveisEmVenda.add(im.clone());
 	}
 
 	public boolean equals(Object o)

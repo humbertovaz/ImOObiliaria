@@ -7,7 +7,7 @@ package src;
  * • o número da porta e o andar • se possui, ou não, garagem
  */
 
-public class Apartamento extends Imovel{
+public class Apartamento extends Imovel implements Habitavel {
     private int tipo; // (1 -Simples,2- Duplex,3- Triplex)
     private int area;
     private int nrQuartos;

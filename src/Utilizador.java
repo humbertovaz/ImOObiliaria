@@ -18,7 +18,7 @@ import java.util.GregorianCalendar;
 *  morada;
 *  data de nascimento.
  */
-public abstract class Utilizador {
+public class Utilizador {
 	
 	private String email; /*Identifica o utilizador*/
 	private String nome;
@@ -63,6 +63,11 @@ public abstract class Utilizador {
     public void setPassword(String password) { this.password = password; }
     public void setMorada(String morada) { this.morada = morada; }
     public void setDataNascimento(GregorianCalendar dataNascimento) { this.dataNascimento = (GregorianCalendar) dataNascimento.clone(); }
+
+	public Utilizador clone()
+	{
+		return new Utilizador(this);
+	}
 
 	public String toString()
 	{

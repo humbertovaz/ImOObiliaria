@@ -26,7 +26,7 @@ public class Comprador extends Utilizador{
 	public Comprador(Comprador c)
 	{
 		super(c.getEmail(), c.getNome(), c.getPassword(), c.getMorada(), c.getDataNascimento());
-		this.favoritos = c.getFavoritosS();
+		this.favoritos = c.getFavoritos();
 	}
 
 	public void setFavorito(String idImovel)
@@ -45,7 +45,7 @@ public class Comprador extends Utilizador{
 	correspondentes aos id's do nosso set
 */
 
-	public TreeSet<String> getFavoritosS()
+	public TreeSet<String> getFavoritos()
 	{
 		/*Não é preciso fazer deep copy por que é um TreeSet de strings, e as strings são imutáveis*/
 		return new TreeSet<>(favoritos);

@@ -1,19 +1,12 @@
 package src;
-
-import java.util.*;
-
-
-
 /**
- *
- * 
 * Uma moradia representa um imóvel para habitação familiar. Estas possuem diversas características relevantes, devendo ser consideradas, no mínimo:
 * • o tipo (isolada, geminada, banda, gaveto) • a área de implantação
 * • a área total coberta
 * • a área do terreno envolvente
 * • o número de quartos e de WCs • o número da porta
 */
-public class Moradia extends Imovel {
+public class Moradia extends Imovel implements Habitavel {
     private int tipo; // 0 -isolada, 1- geminada, 2- banda, 3 - gaveto
     private int area;
     private int areaTerreno;
