@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.Iterator;
 
 
 /*
@@ -24,9 +25,10 @@ import java.util.TreeSet;
 *  Histórico de imóveis vendidos;
  */
 public class Vendedor extends Utilizador{
-    Set<Imovel> imoveisEmVenda;
-    List<Imovel> imoveisVendidos;
-    List<Consulta> consultas;
+   	private static String[] estados = {"emVenda", "reservado", "vendido"}; // por enquanto fica aqui
+	private Set<Imovel> imoveisEmVenda;
+    private List<Imovel> imoveisVendidos;
+    private List<Consulta> consultas;
 
     /*
         Construtores
@@ -66,6 +68,29 @@ public class Vendedor extends Utilizador{
 	public void registaImovel(Imovel im)
 	{
 		imoveisEmVenda.add(im.clone());
+	}
+
+	public void setEstado(String idImovel, String estado)
+	{
+		Iterator<Imovel> it = imoveisEmVenda.iterator();
+		Imovel i = null;
+		boolean found = false;
+		boolean vendido = estado.equals(estados[2]);
+
+		while(it.hasNext() && !found)
+		{
+			i = it.next();
+			if(i.getId().equals(idImovel))
+			{
+				i.setEstado(estado);
+				if(vendido)
+				{
+					imoveisVendidos.add(i);
+					it.remove();
+				}
+				found = true;
+			}
+		}
 	}
 
 	public boolean equals(Object o)

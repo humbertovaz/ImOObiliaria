@@ -12,8 +12,8 @@ public class Moradia extends Imovel implements Habitavel {
     private int areaTerreno;
     private int nrQuartos;
 
-    public Moradia(String id,String rua, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
-        super(id, rua,precoPedido,precoAceite);
+    public Moradia(String id, String rua, String estado, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
+        super(id, rua, estado, precoPedido,precoAceite);
         this.tipo = tipo;
         this.area = area;
         this.areaTerreno = areaTerreno;
@@ -21,7 +21,7 @@ public class Moradia extends Imovel implements Habitavel {
     }
     
     public Moradia(){
-        super("","", 0, 0);
+        super();
         this.tipo = 0;
         this.area = 0;
         this.areaTerreno=0;
@@ -38,55 +38,37 @@ public class Moradia extends Imovel implements Habitavel {
     }
     
     
-    // gets e sets
-    public int getTipo() {
-        return tipo;
-    }
-
-    public int getArea() {
-        return area;
-    }
-
-    public int getAreaTerreno() {
-        return areaTerreno;
-    }
-
-    public int getNrQuartos() {
-        return nrQuartos;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
-
-    public void setAreaTerreno(int areaTerreno) {
-        this.areaTerreno = areaTerreno;
-    }
-
-    public void setNrQuartos(int nrQuartos) {
-        this.nrQuartos = nrQuartos;
-    }
-    /*
+    // getters e setters
+    public int getTipo() { return tipo; }
+    public int getArea() { return area; }
+    public int getAreaTerreno() { return areaTerreno; }
+    public int getNrQuartos() { return nrQuartos; }
+    
+	public void setTipo(int tipo) { this.tipo = tipo; }
+    public void setArea(int area) { this.area = area; }
+    public void setAreaTerreno(int areaTerreno) { this.areaTerreno = areaTerreno; }
+    public void setNrQuartos(int nrQuartos) { this.nrQuartos = nrQuartos; }
+    
+	/*
         equals clone e toString
     */
-    @Override
-    public boolean equals( Object o ){
-     if (this== o) return true;
-     if (this== null || o.getClass()!=this.getClass()) return false;
+    
+	@Override
+    public boolean equals( Object o )
+	{
+    	if (this== o) return true;
+    	if (this== null || o.getClass()!=this.getClass()) return false;
      
-     Moradia moradia = (Moradia) o;
+    	Moradia moradia = (Moradia) o;
      
-     return (super.equals(moradia)
-             && moradia.getTipo()==this.getTipo() 
-             && moradia.getArea()==this.getArea() 
-             && moradia.getAreaTerreno()==this.getAreaTerreno() 
-             && moradia.getNrQuartos()==this.getNrQuartos());
+    	return (super.equals(moradia)
+             	&& moradia.getTipo()==this.getTipo() 
+             	&& moradia.getArea()==this.getArea() 
+             	&& moradia.getAreaTerreno()==this.getAreaTerreno() 
+             	&& moradia.getNrQuartos()==this.getNrQuartos());
     }
-    @Override
+    
+	@Override
     public Moradia clone(){
         return new Moradia(this);
     }
@@ -100,7 +82,4 @@ public class Moradia extends Imovel implements Habitavel {
         str.append("\nnrQuartos= ").append(nrQuartos);
         return str.toString();
     }
-    
-    
-    
 }

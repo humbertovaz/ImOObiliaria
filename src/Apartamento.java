@@ -28,8 +28,8 @@ public class Apartamento extends Imovel implements Habitavel {
         
     }
     
-    public Apartamento(String id,String rua, int precoPedido, int precoAceite, int tipo, int area, int nrQuartos, int nrWC, int nrPorta, int andar, boolean garagem) {
-        super(id,rua, precoPedido, precoAceite);
+    public Apartamento(String id,String rua,String estado, int precoPedido, int precoAceite, int tipo, int area, int nrQuartos, int nrWC, int nrPorta, int andar, boolean garagem) {
+        super(id,rua, estado, precoPedido, precoAceite);
         this.tipo = tipo;
         this.area = area;
         this.nrQuartos = nrQuartos;
@@ -41,74 +41,34 @@ public class Apartamento extends Imovel implements Habitavel {
     }
     public Apartamento (Apartamento o){
         super(o); // rua precoPedido e precoAceite
-        this.tipo = this.getTipo();
-        this.area = this.getArea();
-        this.nrQuartos = this.getNrQuartos();
-        this.nrWC = this.getNrWC();
-        this.nrPorta = this.getNrPorta();
-        this.andar = this.getAndar();
+        tipo = this.getTipo();
+        area = this.getArea();
+        nrQuartos = this.getNrQuartos();
+        nrWC = this.getNrWC();
+        nrPorta = this.getNrPorta();
+        andar = this.getAndar();
         this.garagem = this.temGaragem();
     }
 
-    public final int getTipo() {
-        return tipo;
-    }
+    public final int getTipo() { return tipo; }
+    public int getArea() { return area; }
+    public int getNrQuartos() { return nrQuartos; }
+    public int getNrWC() { return nrWC; }
+    public int getNrPorta() { return nrPorta; }
+    public int getAndar() { return andar; }
+    public boolean temGaragem() { return garagem; }
 
-    public int getArea() {
-        return area;
-    }
-
-    public int getNrQuartos() {
-        return nrQuartos;
-    }
-
-    public int getNrWC() {
-        return nrWC;
-    }
-
-    public int getNrPorta() {
-        return nrPorta;
-    }
-
-    public int getAndar() {
-        return andar;
-    }
-
-    public boolean temGaragem() {
-        return garagem;
-    }
-
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
-
-    public void setNrQuartos(int nrQuartos) {
-        this.nrQuartos = nrQuartos;
-    }
-
-    public void setNrWC(int nrWC) {
-        this.nrWC = nrWC;
-    }
-
-    public void setNrPorta(int nrPorta) {
-        this.nrPorta = nrPorta;
-    }
-
-    public void setAndar(int andar) {
-        this.andar = andar;
-    }
-
-    public void setGaragem(boolean garagem) {
-        this.garagem = garagem;
-    }
-    /*
+    public void setTipo(int tipo) { this.tipo = tipo; }
+    public void setArea(int area) { this.area = area; }
+    public void setNrQuartos(int nrQuartos) { this.nrQuartos = nrQuartos; }
+    public void setNrWC(int nrWC) { this.nrWC = nrWC; }
+    public void setNrPorta(int nrPorta) { this.nrPorta = nrPorta; }
+    public void setAndar(int andar) { this.andar = andar; }
+    public void setGaragem(boolean garagem) { this.garagem = garagem; }
+    
+	/*
         Equals clone e toString
     */
-
     
     @Override
     public boolean equals (Object o){
@@ -124,11 +84,13 @@ public class Apartamento extends Imovel implements Habitavel {
             && ap.getNrPorta()==this.getNrPorta() 
             && ap.getAndar()==this.getAndar());
     }
-    @Override
+    
+	@Override
     public Apartamento clone(){
         return new Apartamento(this);
     }
-     @Override
+
+    @Override
     public String toString() {
         StringBuilder str = new StringBuilder("Apartamento ");
         str.append("tipo "); str.append(tipo); 

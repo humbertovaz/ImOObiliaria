@@ -11,9 +11,9 @@ public class LojaHabitavel extends Loja implements Habitavel
 		apartamento = new Apartamento();
 	}
 
-	public LojaHabitavel(String id, String rua, int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta, Apartamento ap)
+	public LojaHabitavel(String id, String rua, String estado, int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta, Apartamento ap)
 	{
-		super(id, rua, precoPedido, precoAceite, area, wc, tipoNegocio, numeroDePorta);
+		super(id, rua, estado, precoPedido, precoAceite, area, wc, tipoNegocio, numeroDePorta);
 		apartamento = ap.clone();
 	}
 
@@ -23,15 +23,9 @@ public class LojaHabitavel extends Loja implements Habitavel
 		apartamento = lh.getApartamento();
 	}
 
-	public Apartamento getApartamento()
-	{
-		return apartamento.clone();
-	}
-
-	public void setApartamento(Apartamento ap)
-	{
-		apartamento = ap.clone();
-	}
+	public Apartamento getApartamento() { return apartamento.clone(); }
+	
+	public void setApartamento(Apartamento ap) { apartamento = ap.clone(); }
 
 	public LojaHabitavel clone()
 	{

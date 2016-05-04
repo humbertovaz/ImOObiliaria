@@ -22,8 +22,8 @@ public class Loja extends Imovel {
         this.numeroDePorta = 0;
     }
     
-    public Loja(String id, String rua,int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta) {
-        super(id, rua,precoPedido,precoAceite);
+    public Loja(String id, String rua, String estado, int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta) {
+        super(id, rua,estado, precoPedido, precoAceite);
         this.area = area;
         this.wc = wc;
         this.tipoNegocio = tipoNegocio;
@@ -32,50 +32,26 @@ public class Loja extends Imovel {
     
     public Loja (Loja l){
         super(l);
-        this.area=l.getArea();
-        this.wc = l.getWc();
-        this.tipoNegocio = l.getTipoNegocio();
-        this.numeroDePorta =l.getNumeroDePorta();
+        area=l.getArea();
+        wc = l.getWc();
+        tipoNegocio = l.getTipoNegocio();
+        numeroDePorta =l.getNumeroDePorta();
     }
-    
    
-    
     /*
-    getters e setters
+    	getters e setters
     */
     
 
-    public int getArea() {
-        return area;
-    }
-
-    public int getWc() {
-        return wc;
-    }
-
-    public String getTipoNegocio() {
-        return tipoNegocio;
-    }
-
-    public int getNumeroDePorta() {
-        return numeroDePorta;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
-
-    public void setWc(int wc) {
-        this.wc = wc;
-    }
-
-    public void setTipoNegocio(String tipoNegocio) {
-        this.tipoNegocio = tipoNegocio;
-    }
-
-    public void setNumeroDePorta(int numeroDePorta) {
-        this.numeroDePorta = numeroDePorta;
-    }
+    public int getArea() { return area; }
+    public int getWc() { return wc; }
+    public String getTipoNegocio() { return tipoNegocio; }
+    public int getNumeroDePorta() { return numeroDePorta; }
+    
+	public void setArea(int area) { this.area = area; }
+    public void setWc(int wc) { this.wc = wc; }
+    public void setTipoNegocio(String tipoNegocio) { this.tipoNegocio = tipoNegocio; }
+    public void setNumeroDePorta(int numeroDePorta) { this.numeroDePorta = numeroDePorta; }
     
     public boolean equals(Object o){
         if (o==this) return true;
@@ -83,9 +59,6 @@ public class Loja extends Imovel {
         
         Loja l = (Loja) o;
         return (super.equals(l)
-               && l.getRua().equals(this.getRua())
-               && l.getPrecoPedido()==this.getPrecoPedido()
-               && l.getPrecoAceite()==this.getPrecoAceite()
                && l.getArea()==this.getArea()
                && l.getWc()==this.getWc()
                && l.getTipoNegocio().equals(this.getTipoNegocio())
@@ -96,13 +69,11 @@ public class Loja extends Imovel {
     }
     
     public String toString(){
-        StringBuilder sb= new StringBuilder();
-        sb.append("Rua : ").append(this.getRua()).append("\n");
-        sb.append("Preco Pedido: ").append(this.getPrecoPedido()).append("\n");
-        sb.append("Preco Aceite: ").append(this.getPrecoAceite()).append("\n");
-        sb.append("Wc: ").append(this.getWc()).append("\n");
-        sb.append("Tipo de Negocio: ").append(this.getTipoNegocio()).append("\n");
-        sb.append("Numero de Porta : ").append(this.getNumeroDePorta()).append("\n");
+        StringBuilder sb= new StringBuilder("Loja\n");
+        sb.append("Area: ").append(area).append("\n");
+        sb.append("Wc: ").append(wc).append("\n");
+        sb.append("Tipo de Negocio: ").append(tipoNegocio).append("\n");
+        sb.append("Numero de Porta : ").append(numeroDePorta).append("\n");
       
         return sb.toString();
     }

@@ -28,8 +28,8 @@ public class Terreno extends Imovel{
         this.redeEsgotos=0;
     }
     
-    public Terreno(String id,String rua, int precoPedido, int precoAceite, int area, int construcao, double diametro, double kWhmax, int redeEsgotos) {
-        super(id,rua,precoPedido,precoAceite);
+    public Terreno(String id,String rua,String estado, int precoPedido, int precoAceite, int area, int construcao, double diametro, double kWhmax, int redeEsgotos) {
+        super(id,rua, estado, precoPedido,precoAceite);
         this.area = area;
         this.construcao = construcao;
         this.diametro = diametro;
@@ -39,57 +39,29 @@ public class Terreno extends Imovel{
     
     public Terreno(Terreno t){
         super(t);
-        this.area = t.getArea();
-        this.construcao = t.getConstrucao();
-        this.diametro = t.getDiametro();
-        this.kWhmax = t.getkWhmax();
-        this.redeEsgotos = t.getRedeEsgotos();
+        area = t.getArea();
+        construcao = t.getConstrucao();
+        diametro = t.getDiametro();
+        kWhmax = t.getkWhmax();
+        redeEsgotos = t.getRedeEsgotos();
     }
     
     
     /*
-    gets  e sets
+    getters  e setters
     */
 
-    public int getArea() {
-        return area;
-    }
+    public int getArea() { return area; }
+    public int getConstrucao() { return construcao; }
+    public double getDiametro() { return diametro; }
+    public double getkWhmax() { return kWhmax; }
+    public int getRedeEsgotos() { return redeEsgotos; }
 
-    public int getConstrucao() {
-        return construcao;
-    }
-
-    public double getDiametro() {
-        return diametro;
-    }
-
-    public double getkWhmax() {
-        return kWhmax;
-    }
-
-    public int getRedeEsgotos() {
-        return redeEsgotos;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
-
-    public void setConstrucao(int construcao) {
-        this.construcao = construcao;
-    }
-
-    public void setDiametro(double diametro) {
-        this.diametro = diametro;
-    }
-
-    public void setkWhmax(double kWhmax) {
-        this.kWhmax = kWhmax;
-    }
-
-    public void setRedeEsgotos(int redeEsgotos) {
-        this.redeEsgotos = redeEsgotos;
-    }
+    public void setArea(int area) { this.area = area; }
+    public void setConstrucao(int construcao) { this.construcao = construcao; }
+    public void setDiametro(double diametro) { this.diametro = diametro; }
+    public void setkWhmax(double kWhmax) { this.kWhmax = kWhmax; }
+    public void setRedeEsgotos(int redeEsgotos) { this.redeEsgotos = redeEsgotos; }
     
     /*
         Equals clone e toString
@@ -108,9 +80,6 @@ public class Terreno extends Imovel{
  
         Terreno t = (Terreno) o;
         return (super.equals(t)
-               && t.getRua().equals(this.getRua())
-               && t.getPrecoPedido()==this.getPrecoPedido()
-               && t.getPrecoAceite()==this.getPrecoAceite()
                && t.getArea()==this.getArea()
                && t.getConstrucao()==this.getConstrucao()
                && t.getDiametro()==this.getDiametro()
@@ -122,20 +91,14 @@ public class Terreno extends Imovel{
     }
     
     public String toString(){
-        StringBuilder sb= new StringBuilder();
-        sb.append("Rua : ").append(this.getRua()).append("\n");
-        sb.append("Preco Pedido: ").append(this.getPrecoPedido()).append("\n");
-        sb.append("Preco Aceite: ").append(this.getPrecoAceite()).append("\n");
-        sb.append("Area: ").append(this.getArea()).append("\n");
-        sb.append("Construcao: ").append(this.getConstrucao()).append("\n");
-        sb.append("Diametro Canalizacoes: ").append(this.getDiametro()).append("\n");
-        sb.append("kWh Maximo: ").append(this.getkWhmax()).append("\n");
-        sb.append("Rede Esgotos: ").append(this.getRedeEsgotos()).append("\n");
+        StringBuilder sb = new StringBuilder("Terreno\n");
+        sb.append("Area: ").append(area).append("\n");
+        sb.append("Construcao: ").append(construcao).append("\n");
+        sb.append("Diametro Canalizacoes: ").append(diametro).append("\n");
+        sb.append("kWh Maximo: ").append(kWhmax).append("\n");
+        sb.append("Rede Esgotos: ").append(redeEsgotos).append("\n");
       
         return sb.toString();
-    }
-    
-    
-
+    }    
 }
 

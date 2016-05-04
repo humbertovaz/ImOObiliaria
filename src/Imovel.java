@@ -12,61 +12,49 @@ import java.util.*;
 public class Imovel implements Comparable {
     private String id;
     private String rua;
+	private String estado; // (emVenda, reservado, vendido)
     private int precoPedido;
     private int precoAceite;
 
     
     public Imovel(){
-        this.id = this.rua = "";
+        this.id = this.rua = this.estado = "";
         this.precoPedido=0;
         this.precoAceite=0;
         
     }
     
-    public Imovel(String id,String rua, int precoPedido, int precoAceite) {
+    public Imovel(String id, String rua, String estado, int precoPedido, int precoAceite) {
         this.id = id;
         this.rua = rua;
+		this.estado = estado;
         this.precoPedido = precoPedido;
         this.precoAceite = precoAceite;
     }
     
     public Imovel (Imovel o){
-        this.id = o.getId();
-        this.rua=o.getRua();
-        this.precoPedido=o.getPrecoPedido();
-        this.precoAceite=o.getPrecoAceite();
+        id = o.getId();
+        rua= o.getRua();
+		estado = o.getEstado();
+        precoPedido= o.getPrecoPedido();
+        precoAceite= o.getPrecoAceite();
     }
-//gets e sets
+	
+	//getters e setters
     
     public String getId() { return id;}
-
-    public String getRua() {
-        return rua;
-    }
-
-    public int getPrecoPedido() {
-        return precoPedido;
-    }
-
-    public int getPrecoAceite() {
-        return precoAceite;
-    }
-
-    public void setId(String id) { this.id = id;}
-
-    public void setRua(String rua) {
-        this.rua = rua;
-    }
-
-    public void setPrecoPedido(int precoPedido) {
-        this.precoPedido = precoPedido;
-    }
-
-    public void setPrecoAceite(int precoAceite) {
-        this.precoAceite = precoAceite;
-    }
-
-    public int compareTo(Object o) 
+    public String getRua() { return rua; }
+	public String getEstado() { return estado; }
+    public int getPrecoPedido() { return precoPedido; }
+    public int getPrecoAceite() { return precoAceite; }
+   
+    public void setId(String id) { this.id = id; }
+    public void setRua(String rua) { this.rua = rua; }
+    public void setEstado(String estado) { this.estado = estado; }
+	public void setPrecoPedido(int precoPedido) { this.precoPedido = precoPedido; }
+    public void setPrecoAceite(int precoAceite) { this.precoAceite = precoAceite; }
+    
+	public int compareTo(Object o) 
     { 
         Imovel i = (Imovel) o;
         return id.compareTo(i.getId()); 
@@ -85,7 +73,8 @@ public class Imovel implements Comparable {
     
     return(id.equals(i.getId()) && 
            rua.equals(i.getRua()) && 
-           precoPedido==i.getPrecoPedido() && 
+           estado.equals(i.getEstado()) &&
+		   precoPedido==i.getPrecoPedido() && 
            precoAceite==i.getPrecoAceite());
     }
     
