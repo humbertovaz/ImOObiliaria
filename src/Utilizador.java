@@ -64,8 +64,9 @@ public class Utilizador implements Comparable {
     public void setMorada(String morada) { this.morada = morada; }
     public void setDataNascimento(GregorianCalendar dataNascimento) { this.dataNascimento = (GregorianCalendar) dataNascimento.clone(); }
 
-	public int compareTo(Utilizador u)
+	public int compareTo(Object o)
 	{
+	    Utilizador u = (Utilizador) o;
 		return email.compareTo(u.getEmail());
 	}
 

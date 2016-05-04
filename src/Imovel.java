@@ -66,8 +66,11 @@ public class Imovel implements Comparable {
         this.precoAceite = precoAceite;
     }
 
-  
-    int compareTo(Imovel i) { return id.compareTo(i.getId()); }
+    public int compareTo(Object o) 
+    { 
+        Imovel i = (Imovel) o;
+        return id.compareTo(i.getId()); 
+    }
 
     /*
      Equals clone e toString

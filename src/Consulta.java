@@ -2,7 +2,7 @@ package src;
 
 import java.util.GregorianCalendar;
 
-public class Consulta
+public class Consulta implements Comparable
 {
     private Imovel imovel;
     private String email;
@@ -35,6 +35,12 @@ public class Consulta
     public void setEmail(String e) { email = e; }
     public void setData(GregorianCalendar d) { data = (GregorianCalendar) d.clone(); }
     
+	public int compareTo(Object o)
+	{
+	    Consulta c = (Consulta) o;
+		return data.getTime().compareTo(c.getData().getTime());
+	}
+
     public Consulta clone()
     {
         return new Consulta(this);
