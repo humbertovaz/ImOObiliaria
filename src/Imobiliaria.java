@@ -52,7 +52,7 @@ public class Imobiliaria
 		else
 			return null;
 	}
-    
+
     public boolean containsIt(String k)
     {
         Iterator<Imovel> it = imoveis.iterator();
@@ -139,11 +139,38 @@ public class Imobiliaria
 					  .collect(Collectors.toList());
 	}
 
-    public static void initApp() {}
+    public static void initApp() 
+	{
+		/*suposto fazer o load dos dados*/
+	}
     
-    public void registarUtilizador(Utilizador utilizador) {}
+    public void registarUtilizador(Utilizador utilizador) 
+	{
+		/*como é que sabemos que é vendedor ou comprador !??*/
+	}
     
-    public void iniciaSessao(String email, String password) {}
-    
-    public void fechaSessao() {}
+	/*Ao fazer este método apercebi-me que se calhar deviamos ter uma 
+	  lista de Utilizadores apenas, não sei, tenho que pensar*/
+    public void iniciaSessao(String email, String password) 
+	{
+		/*throws SemAutorizacaoException*/
+		Comprador c = null;
+		Vendedor v = null;
+		if((c = getComprador(email))!=null)
+		{
+			if(password.equals(c.getPassword()))
+				emailLogged = email;
+		}
+		else if((v = getVendedor(email))!=null)
+		{
+			if(password.equals(v.getPassword()))
+				emailLogged = email;
+		}
+		else return;
+	}
+
+    public void fechaSessao() 
+	{
+		emailLogged = "";
+	}
 }
