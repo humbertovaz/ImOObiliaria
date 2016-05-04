@@ -18,7 +18,7 @@ import java.util.GregorianCalendar;
 *  morada;
 *  data de nascimento.
  */
-public class Utilizador {
+public class Utilizador implements Comparable {
 	
 	private String email; /*Identifica o utilizador*/
 	private String nome;
@@ -63,6 +63,11 @@ public class Utilizador {
     public void setPassword(String password) { this.password = password; }
     public void setMorada(String morada) { this.morada = morada; }
     public void setDataNascimento(GregorianCalendar dataNascimento) { this.dataNascimento = (GregorianCalendar) dataNascimento.clone(); }
+
+	public int compareTo(Utilizador u)
+	{
+		return email.compareTo(u.getEmail());
+	}
 
 	public Utilizador clone()
 	{

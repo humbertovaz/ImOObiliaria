@@ -9,7 +9,7 @@ import java.util.*;
  */
 
 
-public class Imovel {
+public class Imovel implements Comparable {
     private String id;
     private String rua;
     private int precoPedido;
@@ -67,7 +67,8 @@ public class Imovel {
     }
 
   
-    
+    int compareTo(Imovel i) { return id.compareTo(i.getId()); }
+
     /*
      Equals clone e toString
     */
