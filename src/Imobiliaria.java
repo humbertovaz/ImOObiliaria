@@ -217,7 +217,7 @@ public class Imobiliaria implements Serializable
 
     public static Imobiliaria initApp() throws IOException, ClassNotFoundException, ClassCastException
     {
-       return leObj("imobEstado.dat");
+       return leObj("Imobiliaria.ser");
     }
     
     public void registarUtilizador(Utilizador utilizador) throws UtilizadorExistenteException

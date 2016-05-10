@@ -82,7 +82,7 @@ public class ImobiliariaApp
         }while(op != 0);
 
         try{
-            imobiliaria.gravaObj("imobEstado.dat");
+            imobiliaria.gravaObj("Imobiliaria.ser");
             imobiliaria.log("log.txt", true);
         }catch(IOException e){ System.out.println("Erro ao gravar os dados\n"); }
         
@@ -694,7 +694,6 @@ public class ImobiliariaApp
                     System.out.println("------------------------------------------------");
                 }
                 
-                System.out.println(entry.getKey().getClass().getName()+"\n");
                 System.out.println(entry.getKey().toString()+"\n");
                 
             }
