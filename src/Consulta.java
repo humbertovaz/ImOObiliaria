@@ -2,22 +2,24 @@ package src;
 
 import java.util.GregorianCalendar;
 
-public class Consulta implements Comparable
+import java.io.Serializable;
+
+public class Consulta implements Comparable<Consulta>, Serializable
 {
-    private Imovel imovel;
+    private String imovel;
     private String email;
     private GregorianCalendar data;
     
     public Consulta()
     {
-        imovel = null;
+        imovel = "";
         email = "";
         data = new GregorianCalendar();
     }
     
-    public Consulta(Imovel im, String email, GregorianCalendar d)
+    public Consulta(String im, String email, GregorianCalendar d)
     {
-        imovel = im.clone();
+        imovel = im;
         this.email = email;
         data =(GregorianCalendar) d.clone();
     }
@@ -27,18 +29,17 @@ public class Consulta implements Comparable
         this(c.getImovel(), c.getEmail(), c.getData());
     }
     
-    public Imovel getImovel() { return imovel.clone(); }
+    public String getImovel() { return imovel; }
     public String getEmail() { return email; }
     public GregorianCalendar getData() { return (GregorianCalendar) data.clone(); }
 
-    public void setImovel(Imovel i) { imovel = i.clone(); }
+    public void setImovel(String i) { imovel = i; }
     public void setEmail(String e) { email = e; }
     public void setData(GregorianCalendar d) { data = (GregorianCalendar) d.clone(); }
     
-	public int compareTo(Object o)
+	public int compareTo(Consulta c)
 	{
-	    Consulta c = (Consulta) o;
-		return data.getTime().compareTo(c.getData().getTime());
+		return data.compareTo(c.getData());
 	}
 
     public Consulta clone()
@@ -56,4 +57,14 @@ public class Consulta implements Comparable
                email.equals(obj.getEmail()) &&
                data.equals(obj.getData());               
     }
+
+	public String toString()
+	{
+		StringBuilder str = new StringBuilder("Consulta\n");
+		str.append("Imovel (id): "); str.append(imovel);
+		str.append("Utilizador (email): "); str.append(email);
+		str.append("Data de consulta: ");str.append(data.getTime());
+
+		return str.toString();
+	}
 }

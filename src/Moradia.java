@@ -1,4 +1,9 @@
 package src;
+
+import java.util.Iterator;
+
+import java.io.Serializable;
+
 /**
 * Uma moradia representa um imóvel para habitação familiar. Estas possuem diversas características relevantes, devendo ser consideradas, no mínimo:
 * • o tipo (isolada, geminada, banda, gaveto) • a área de implantação
@@ -6,80 +11,118 @@ package src;
 * • a área do terreno envolvente
 * • o número de quartos e de WCs • o número da porta
 */
-public class Moradia extends Imovel implements Habitavel {
-    private int tipo; // 0 -isolada, 1- geminada, 2- banda, 3 - gaveto
-    private int area;
-    private int areaTerreno;
+public class Moradia extends Imovel implements Habitavel, Serializable {
+    private static String[] tipos = {"isolada", "geminada", "banda", "gaveto"};
+    private String tipo;
+    private int areaImplantacao;
+    private int areaTotalCoberta;
+    private int areaTerrenoEnv;
     private int nrQuartos;
 
-    public Moradia(String id, String rua, String estado, int precoPedido, int precoAceite, int tipo, int area, int areaTerreno, int nrQuartos) {
+    public Moradia(String id, String rua, String estado, double precoPedido, double precoAceite, String tipo, int areaImplantacao, int areaTotalCoberta, int areaTerrenoEnv, int nrQuartos){
         super(id, rua, estado, precoPedido,precoAceite);
-        this.tipo = tipo;
-        this.area = area;
-        this.areaTerreno = areaTerreno;
+        this.areaImplantacao = areaImplantacao;
+        this.areaTotalCoberta = areaTotalCoberta;
+        this.areaTerrenoEnv = areaTerrenoEnv;
         this.nrQuartos = nrQuartos;
+        this.tipo = tipo;
     }
     
     public Moradia(){
         super();
-        this.tipo = 0;
-        this.area = 0;
-        this.areaTerreno=0;
-        this.nrQuartos = 0;
+        tipo = "";
+        areaImplantacao = 0;
+        areaTotalCoberta = 0;
+        areaTerrenoEnv=0;
+        nrQuartos = 0;
     }
     
      public Moradia (Moradia o){
         super(o);
-        this.tipo = o.getTipo();
-        this.area = o.getArea();
-        this.areaTerreno=o.getAreaTerreno();
-        this.nrQuartos = o.getNrQuartos();
+        tipo = o.getTipo();
+        areaImplantacao = o.getAreaImplantacao();
+        areaTotalCoberta = o.getAreaTotalCoberta();
+        areaTerrenoEnv =o.getAreaTerrenoEnv();
+        nrQuartos = o.getNrQuartos();
        
     }
     
+    public static boolean validaTipo(String tipo)
+    {
+        boolean valido = false;
+        
+        for(String t: tipos)
+        {
+            if(t.equals(tipo))
+            {
+                valido = true;
+                break;
+            }
+        }
+        
+        return valido;
+    }
     
     // getters e setters
-    public int getTipo() { return tipo; }
-    public int getArea() { return area; }
-    public int getAreaTerreno() { return areaTerreno; }
+    public String getTipo() { return tipo; }
+    public int getAreaImplantacao() { return areaImplantacao; }
+    public int getAreaTotalCoberta() { return areaTotalCoberta;}
+    public int getAreaTerrenoEnv() { return areaTerrenoEnv; }
     public int getNrQuartos() { return nrQuartos; }
     
-	public void setTipo(int tipo) { this.tipo = tipo; }
-    public void setArea(int area) { this.area = area; }
-    public void setAreaTerreno(int areaTerreno) { this.areaTerreno = areaTerreno; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
+    public void setArea(int a) { areaImplantacao = a; }
+    public void setAreaTotalCoberta(int a) { areaTotalCoberta = a;}
+    public void setAreaTerreno(int a) { areaTerrenoEnv = a; }
     public void setNrQuartos(int nrQuartos) { this.nrQuartos = nrQuartos; }
     
-	/*
+    /*
         equals clone e toString
     */
     
-	@Override
+    @Override
     public boolean equals( Object o )
-	{
-    	if (this== o) return true;
-    	if (this== null || o.getClass()!=this.getClass()) return false;
+    {
+        if (this== o) return true;
+        if (this== null || o.getClass()!=this.getClass()) return false;
      
-    	Moradia moradia = (Moradia) o;
+        Moradia moradia = (Moradia) o;
      
-    	return (super.equals(moradia)
-             	&& moradia.getTipo()==this.getTipo() 
-             	&& moradia.getArea()==this.getArea() 
-             	&& moradia.getAreaTerreno()==this.getAreaTerreno() 
-             	&& moradia.getNrQuartos()==this.getNrQuartos());
+        return (super.equals(moradia)
+                && moradia.getTipo().equals(tipo) 
+                && moradia.getAreaImplantacao()==areaImplantacao
+                && moradia.getAreaTotalCoberta()==areaTotalCoberta
+                && moradia.getAreaTerrenoEnv()==areaTerrenoEnv
+                && moradia.getNrQuartos()==nrQuartos);
     }
     
-	@Override
+    @Override
     public Moradia clone(){
         return new Moradia(this);
     }
     
     @Override
     public String toString() {
-        StringBuilder str = new StringBuilder("Moradia ");
-        str.append("tipo= ").append(tipo);
-        str.append("\narea= ").append(area);
-        str.append("\nareaTerreno= ").append(areaTerreno);
-        str.append("\nnrQuartos= ").append(nrQuartos);
+        StringBuilder str = new StringBuilder("Moradia: ");
+        str.append(super.toString());
+        str.append("\ntipo: ").append(tipo);
+        str.append("\nArea implantaçao: ").append(areaImplantacao);
+        str.append("\nArea Total coberta: ").append(areaTotalCoberta);
+        str.append("\nArea Terreno envolvente: ").append(areaTerrenoEnv);
+        str.append("\nnrQuartos: ").append(nrQuartos);
         return str.toString();
+    }
+
+    public int hashCode()
+    {
+        int hash = super.hashCode();
+
+        hash = 31*hash + tipo.hashCode();
+        hash = 31*hash + areaImplantacao;
+        hash = 31*hash + areaTotalCoberta;
+        hash = 31*hash + areaTerrenoEnv;
+        hash = 31*hash + nrQuartos;
+
+        return hash;
     }
 }

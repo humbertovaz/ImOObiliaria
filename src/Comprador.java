@@ -7,7 +7,9 @@ import java.util.TreeSet;
 import java.util.Iterator;
 import java.util.stream.Collectors;
 
-public class Comprador extends Utilizador{
+import java.io.Serializable;
+
+public class Comprador extends Utilizador implements Serializable{
 
 	Set<String> favoritos;
 
@@ -25,7 +27,7 @@ public class Comprador extends Utilizador{
 
 	public Comprador(Comprador c)
 	{
-		super(c.getEmail(), c.getNome(), c.getPassword(), c.getMorada(), c.getDataNascimento());
+		super(c);
 		this.favoritos = c.getFavoritos();
 	}
 
@@ -40,11 +42,6 @@ public class Comprador extends Utilizador{
 		favs.forEach(i -> this.favoritos.add(i));
 	}
 
-/*
-	Teremos que incluir qualquer coisa para podermos ir buscar os imoveis
-	correspondentes aos id's do nosso set
-*/
-
 	public TreeSet<String> getFavoritos()
 	{
 		/*Não é preciso fazer deep copy por que é um TreeSet de strings, e as strings são imutáveis*/
@@ -58,16 +55,30 @@ public class Comprador extends Utilizador{
 
 	public boolean equals(Object o)
 	{
-		boolean res = this.equals(o);
-		/*Ver se é preciso verificar se os TreeSets são os mesmos*/
-		return res;
+		if(this == o) return true;
+		if((o == null) || (this.getClass() != o.getClass())) return false;
+		
+		Comprador c = (Comprador) o;
+		/*testar também o set de favoritos!?*/
+		return super.equals(c);
 	}
 
 	public String toString()
 	{
-		String s = super.toString();
-		/*ver se é preciso passar o treeSet para string também*/
-		return s;
+		StringBuilder str = new StringBuilder("\n==========Comprador==========\n");
+		str.append(super.toString());
+		str.append("\nImoveis Favoritos (id):\n");
+		for(String id: favoritos)
+			str.append(id+"\n");
+		str.append("\n=============================\n");
+		return str.toString();
+	}
+	
+	public int hashCode()
+	{
+		int hash = super.hashCode();
+		
+		return hash*31 + ((favoritos == null) ? 0 : favoritos.hashCode());
 	}
 
 }

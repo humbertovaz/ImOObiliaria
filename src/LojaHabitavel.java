@@ -1,7 +1,8 @@
 package src;
 
+import java.io.Serializable;
 
-public class LojaHabitavel extends Loja implements Habitavel
+public class LojaHabitavel extends Loja implements Habitavel, Serializable
 {
 	private Apartamento apartamento;
 
@@ -11,7 +12,7 @@ public class LojaHabitavel extends Loja implements Habitavel
 		apartamento = new Apartamento();
 	}
 
-	public LojaHabitavel(String id, String rua, String estado, int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta, Apartamento ap)
+	public LojaHabitavel(String id, String rua, String estado, double precoPedido, double precoAceite, int area, boolean wc, String tipoNegocio, int numeroDePorta, Apartamento ap)
 	{
 		super(id, rua, estado, precoPedido, precoAceite, area, wc, tipoNegocio, numeroDePorta);
 		apartamento = ap.clone();
@@ -21,6 +22,12 @@ public class LojaHabitavel extends Loja implements Habitavel
 	{
 		super(lh);
 		apartamento = lh.getApartamento();
+	}
+	
+	public LojaHabitavel(Loja l, Apartamento ap)
+	{
+	    super(l);
+	    apartamento = ap.clone();
 	}
 
 	public Apartamento getApartamento() { return apartamento.clone(); }
@@ -44,9 +51,19 @@ public class LojaHabitavel extends Loja implements Habitavel
 	public String toString()
 	{
 		StringBuilder str = new StringBuilder(super.toString());
-		str.append(" "); str.append(apartamento.toString());
+		str.append("\n"); 
+		str.append(apartamento.toString());
 		
 		return str.toString();
+	}
+
+	public int hashCode()
+	{
+		int hash = super.hashCode();
+
+		hash = 31*hash + apartamento.hashCode();
+
+		return hash;
 	}
 	
 }

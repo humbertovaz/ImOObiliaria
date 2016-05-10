@@ -1,5 +1,7 @@
 package src;
 
+import java.io.Serializable;
+
 /**
  *  Um apartamento representa um imóvel inserido num prédio, como tal sem jardim. São consideradas no mínimo, as seguintes características:
  * • o tipo (Simples, Duplex, Triplex) • a área total
@@ -7,8 +9,9 @@ package src;
  * • o número da porta e o andar • se possui, ou não, garagem
  */
 
-public class Apartamento extends Imovel implements Habitavel {
-    private int tipo; // (1 -Simples,2- Duplex,3- Triplex)
+public class Apartamento extends Imovel implements Habitavel, Serializable {
+    private static String[] tipos = {"simples", "duplex", "triplex"};
+    private String tipo;
     private int area;
     private int nrQuartos;
     private int nrWC;
@@ -18,17 +21,17 @@ public class Apartamento extends Imovel implements Habitavel {
 
     public Apartamento(){
         super();
-        this.tipo = 0;
-        this.area = 0;
-        this.nrQuartos = 0;
-        this.nrWC = 0;
-        this.nrPorta = 0;
-        this.andar = 0;
-        this.garagem = false;
+        tipo = "";
+        area = 0;
+        nrQuartos = 0;
+        nrWC = 0;
+        nrPorta = 0;
+        andar = 0;
+        garagem = false;
         
     }
     
-    public Apartamento(String id,String rua,String estado, int precoPedido, int precoAceite, int tipo, int area, int nrQuartos, int nrWC, int nrPorta, int andar, boolean garagem) {
+    public Apartamento(String id,String rua,String estado, double precoPedido, double precoAceite, String tipo, int area, int nrQuartos, int nrWC, int nrPorta, int andar, boolean garagem) {
         super(id,rua, estado, precoPedido, precoAceite);
         this.tipo = tipo;
         this.area = area;
@@ -40,25 +43,40 @@ public class Apartamento extends Imovel implements Habitavel {
         
     }
     public Apartamento (Apartamento o){
-        super(o); // rua precoPedido e precoAceite
-        tipo = this.getTipo();
-        area = this.getArea();
-        nrQuartos = this.getNrQuartos();
-        nrWC = this.getNrWC();
-        nrPorta = this.getNrPorta();
-        andar = this.getAndar();
-        this.garagem = this.temGaragem();
+        super(o);
+        tipo = o.getTipo();
+        area = o.getArea();
+        nrQuartos = o.getNrQuartos();
+        nrWC = o.getNrWC();
+        nrPorta = o.getNrPorta();
+        andar = o.getAndar();
+        garagem = o.getGaragem();
     }
 
-    public final int getTipo() { return tipo; }
+    public static boolean validaTipo(String tipo)
+    {
+        boolean valido = false;
+        
+        for(String t: tipos)
+        {
+            if(t.equals(tipo))
+            {
+                valido = true;
+                break;
+            }
+        }
+        return valido;
+    }
+    
+    public String getTipo() { return tipo; }
     public int getArea() { return area; }
     public int getNrQuartos() { return nrQuartos; }
     public int getNrWC() { return nrWC; }
     public int getNrPorta() { return nrPorta; }
     public int getAndar() { return andar; }
-    public boolean temGaragem() { return garagem; }
+    public boolean getGaragem() { return garagem; }
 
-    public void setTipo(int tipo) { this.tipo = tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
     public void setArea(int area) { this.area = area; }
     public void setNrQuartos(int nrQuartos) { this.nrQuartos = nrQuartos; }
     public void setNrWC(int nrWC) { this.nrWC = nrWC; }
@@ -66,7 +84,7 @@ public class Apartamento extends Imovel implements Habitavel {
     public void setAndar(int andar) { this.andar = andar; }
     public void setGaragem(boolean garagem) { this.garagem = garagem; }
     
-	/*
+    /*
         Equals clone e toString
     */
     
@@ -77,30 +95,47 @@ public class Apartamento extends Imovel implements Habitavel {
     Apartamento ap = (Apartamento) o;
     
     return (super.equals(ap)
-            && ap.getTipo()==this.getTipo() 
-            && ap.getArea()==this.getArea() 
-            && ap.getNrQuartos()==this.getNrQuartos() 
-            && ap.getNrWC()==this.getNrWC() 
-            && ap.getNrPorta()==this.getNrPorta() 
-            && ap.getAndar()==this.getAndar());
+            && ap.getTipo().equals(tipo) 
+            && ap.getArea()==area 
+            && ap.getNrQuartos()==nrQuartos
+            && ap.getNrWC()==nrWC
+            && ap.getNrPorta()==nrPorta
+            && ap.getAndar()==andar
+            && ap.getGaragem()==garagem);
     }
     
-	@Override
+    @Override
     public Apartamento clone(){
         return new Apartamento(this);
     }
 
     @Override
     public String toString() {
-        StringBuilder str = new StringBuilder("Apartamento ");
-        str.append("tipo "); str.append(tipo); 
-        str.append("area "); str.append(area);
-        str.append("nrQuartos "); str.append(nrQuartos);
-        str.append("nrWC "); str.append(nrWC);
-        str.append("nrPorta "); str.append(nrPorta);
-        str.append("andar "); str.append(andar);
-        str.append("garagem "); str.append(garagem);
+        StringBuilder str = new StringBuilder("Apartamento: ");
+        str.append(super.toString());
+        str.append("\ntipo "); str.append(tipo); 
+        str.append("\narea "); str.append(area);
+        str.append("\nnrQuartos "); str.append(nrQuartos);
+        str.append("\nnrWC "); str.append(nrWC);
+        str.append("\nnrPorta "); str.append(nrPorta);
+        str.append("\nandar "); str.append(andar);
+        str.append("\ngaragem "); str.append(garagem);
+        str.append("\n");
         return str.toString();
     }
+    
+    public int hashCode()
+    {
+        int hash = super.hashCode();
 
+        hash = 31*hash + tipo.hashCode();
+        hash = 31*hash + area;
+        hash = 31*hash + nrQuartos;
+        hash = 31*hash + nrWC;
+        hash = 31*hash + nrPorta;
+        hash = 31*hash + andar;
+        hash = 31*hash + (garagem ? 1 : 0);
+    
+        return hash;
+    }
 }

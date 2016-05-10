@@ -1,24 +1,17 @@
 package src;
 
+
+import java.io.Serializable;
+
+import java.text.SimpleDateFormat;
+
 import java.util.GregorianCalendar;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package ImOObiliaria;
-
-/**
- *
- * Propõe-se a existência de dois tipos distintos de actores no sistema, que partilham a
-* seguinte informação:
-*  email (que identifica o utilizador);
-*  nome;
-*  password;
-*  morada;
-*  data de nascimento.
- */
-public class Utilizador implements Comparable {
+public class Utilizador implements Comparable, Serializable {
 	
 	private String email; /*Identifica o utilizador*/
 	private String nome;
@@ -54,7 +47,7 @@ public class Utilizador implements Comparable {
      */
     public String getEmail() { return email; }
     public String getNome() { return nome; }
-    public String getPassword() { return password; }
+    private String getPassword() { return password; }
     public String getMorada() { return morada; }
     public GregorianCalendar getDataNascimento() { return (GregorianCalendar) dataNascimento.clone(); }
 
@@ -64,6 +57,19 @@ public class Utilizador implements Comparable {
     public void setMorada(String morada) { this.morada = morada; }
     public void setDataNascimento(GregorianCalendar dataNascimento) { this.dataNascimento = (GregorianCalendar) dataNascimento.clone(); }
 
+    public boolean changePassword(String email, String oldPassword, String newPassword)
+    {
+        boolean result = email.equals(this.email) && oldPassword.equals(password);
+        if(result)
+            password = newPassword;
+        return result;
+    }
+    
+    public boolean verificaPassword(String pass)
+	{
+		return password.equals(pass);
+	}
+    
 	public int compareTo(Object o)
 	{
 	    Utilizador u = (Utilizador) o;
@@ -77,13 +83,13 @@ public class Utilizador implements Comparable {
 
 	public String toString()
 	{
-		StringBuilder str = new StringBuilder("==========Actor==========");
-		str.append("Email: ");
-		str.append(email); str.append("\nNome: ");
-		str.append(nome); str.append("\nMorada: ");
-		str.append(morada); str.append("\nData de nascimento: ");
-		str.append(dataNascimento.getTime());
-		str.append("=========================");
+		StringBuilder str = new StringBuilder();
+		str.append("\nEmail: ").append(email); 
+		str.append("\nNome: ").append(nome); 
+		str.append("\nMorada: ").append(morada);
+		SimpleDateFormat sdf = new SimpleDateFormat();
+		sdf.applyPattern("dd/MM/yyyy");
+		str.append("\nData de nascimento: ").append(sdf.format(dataNascimento.getTime()));
 		return str.toString();
 	}
 

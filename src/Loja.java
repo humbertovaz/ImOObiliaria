@@ -1,5 +1,8 @@
 package src;
 
+
+import java.io.Serializable;
+
 /**
  *
  * Uma loja representa um espaço destinado a diferentes tipos de negócio. Deve ficar
@@ -8,21 +11,21 @@ negócio viável na loja, número da porta.
 Existem, no entanto, algumas lojas que possuem parte habitacional. Para estas
 deverá ser registada a informação guardada para os apartamentos.
  */
-public class Loja extends Imovel {
+public class Loja extends Imovel implements Serializable {
     int area;
-    int wc; //1 -Sim, 0-Nao;
+    boolean wc; //1 -Sim, 0-Nao;
     String tipoNegocio;
     int numeroDePorta;
 
     public Loja(){
         super();
-        this.area = 0;
-        this.wc = 0;
-        this.tipoNegocio = "";
-        this.numeroDePorta = 0;
+        area = 0;
+        wc = false;
+        tipoNegocio = "";
+        numeroDePorta = 0;
     }
     
-    public Loja(String id, String rua, String estado, int precoPedido, int precoAceite, int area, int wc, String tipoNegocio, int numeroDePorta) {
+    public Loja(String id, String rua, String estado, double precoPedido, double precoAceite, int area, boolean wc, String tipoNegocio, int numeroDePorta) {
         super(id, rua,estado, precoPedido, precoAceite);
         this.area = area;
         this.wc = wc;
@@ -44,12 +47,12 @@ public class Loja extends Imovel {
     
 
     public int getArea() { return area; }
-    public int getWc() { return wc; }
+    public boolean getWc() { return wc; }
     public String getTipoNegocio() { return tipoNegocio; }
     public int getNumeroDePorta() { return numeroDePorta; }
     
 	public void setArea(int area) { this.area = area; }
-    public void setWc(int wc) { this.wc = wc; }
+    public void setWc(boolean wc) { this.wc = wc; }
     public void setTipoNegocio(String tipoNegocio) { this.tipoNegocio = tipoNegocio; }
     public void setNumeroDePorta(int numeroDePorta) { this.numeroDePorta = numeroDePorta; }
     
@@ -59,17 +62,18 @@ public class Loja extends Imovel {
         
         Loja l = (Loja) o;
         return (super.equals(l)
-               && l.getArea()==this.getArea()
-               && l.getWc()==this.getWc()
-               && l.getTipoNegocio().equals(this.getTipoNegocio())
-               && l.getNumeroDePorta()==this.getNumeroDePorta());
+               && l.getArea()==area
+               && l.getWc()==wc
+               && l.getTipoNegocio().equals(tipoNegocio)
+               && l.getNumeroDePorta()==numeroDePorta);
     }
     public Loja clone(){
         return new Loja(this);
     }
     
     public String toString(){
-        StringBuilder sb= new StringBuilder("Loja\n");
+        StringBuilder sb= new StringBuilder("Loja: \n");
+        sb.append(super.toString());
         sb.append("Area: ").append(area).append("\n");
         sb.append("Wc: ").append(wc).append("\n");
         sb.append("Tipo de Negocio: ").append(tipoNegocio).append("\n");
@@ -77,5 +81,17 @@ public class Loja extends Imovel {
       
         return sb.toString();
     }
+
+	public int hashCode()
+	{
+		int hash = super.hashCode();
+
+		hash = 31*hash + area;
+		hash = 31*hash + (wc ? 1 : 0);
+		hash = 31*hash + tipoNegocio.hashCode();
+		hash = 31*hash + numeroDePorta;
+
+		return hash;
+	}
     
 }
