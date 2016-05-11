@@ -62,8 +62,8 @@ public class Consulta implements Comparable<Consulta>, Serializable
 	{
 		StringBuilder str = new StringBuilder("Consulta\n");
 		str.append("Imovel (id): "); str.append(imovel);
-		str.append("Utilizador (email): "); str.append(email);
-		str.append("Data de consulta: ");str.append(data.getTime());
+		str.append("; Utilizador (email): "); str.append(email);
+		str.append("; Data de consulta: ");str.append(data.getTime());
 
 		return str.toString();
 	}

@@ -35,7 +35,7 @@ public class Imobiliaria implements Serializable
     }
 
     /*
-     * VENDEDORES (VERIFICACOES AINDA SEM TRY{}CATCH)
+     * VENDEDORES
      */
     /*para quando um vendedor esta loggado, vai acrescentar
       o imovel ao seu set de imoveis, e temos de acrescentar
@@ -62,6 +62,9 @@ public class Imobiliaria implements Serializable
         
         Vendedor v = (Vendedor) logged;
         Set<String> emVenda = v.getImoveisEmVenda();
+        
+        /*Incluir tambem para os imoveis vendidos!?*/
+        
         List<Consulta> consultas = new ArrayList<>();
         
         for(String id: emVenda)
@@ -111,6 +114,7 @@ public class Imobiliaria implements Serializable
         Vendedor v = (Vendedor) logged;
         Set<String> ids = v.getImoveisEmVenda();
 
+        /*Ordenar por numero de consultas (Maior para o menor)*/
         return ids.stream().filter(i -> imoveis.get(i).getNumConsultas() >= n).collect(Collectors.toSet());
     }
 
@@ -156,7 +160,7 @@ public class Imobiliaria implements Serializable
                                                       return i.clone();
                                                    else 
                                                    {
-                                                      String email = (logged != null) ? logged.getEmail() : "";
+                                                      String email = (logged != null) ? logged.getEmail() : "nao registado";
                                                       i.registaConsulta(email, new GregorianCalendar()); 
                                                       return i.clone();
                                                    }})
@@ -172,7 +176,7 @@ public class Imobiliaria implements Serializable
                                          return (Habitavel) i.clone();
                                       else 
                                       {
-                                         String email = (logged != null) ? logged.getEmail() : "";
+                                         String email = (logged != null) ? logged.getEmail() : "nao registado";
                                          i.registaConsulta(email, new GregorianCalendar()); 
                                          return (Habitavel) i.clone();
                                       }})
@@ -205,7 +209,7 @@ public class Imobiliaria implements Serializable
                 else
                 {
                     Imovel im = imoveis.get(id);
-                    String email = logged != null ? logged.getEmail() : "";
+                    String email = logged != null ? logged.getEmail() : "nao registado";
                     im.registaConsulta(email, new GregorianCalendar());
                     mapIm.put(im, v);
                 }

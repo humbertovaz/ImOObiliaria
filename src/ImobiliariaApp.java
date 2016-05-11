@@ -164,7 +164,7 @@ public class ImobiliariaApp
                 opGetImovel();
                 break;
             case 4:
-                opGetHabitaveis();
+                opGetHabitavel();
                 break;
             case 5:
                 opGetMapeamento();
@@ -192,7 +192,7 @@ public class ImobiliariaApp
                 opGetImovel();
                 break;
             case 4:
-                opGetHabitaveis();
+                opGetHabitavel();
                 break;
             case 5:
                 opGetMapeamento();
@@ -230,7 +230,7 @@ public class ImobiliariaApp
                 opGetImovel();
                 break;
             case 6:
-                opGetHabitaveis();
+                opGetHabitavel();
                 break;
             case 7:
                 opGetMapeamento();
@@ -617,7 +617,7 @@ public class ImobiliariaApp
         input.close();
     }
     
-    public static void opGetHabitaveis()
+    public static void opGetHabitavel()
     {
         Scanner input = new Scanner(System.in);
         List<Habitavel> im = null;
