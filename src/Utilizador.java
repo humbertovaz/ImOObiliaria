@@ -11,7 +11,7 @@ import java.util.GregorianCalendar;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-public class Utilizador implements Comparable, Serializable {
+public abstract class Utilizador implements Comparable, Serializable {
 	
 	private String email; /*Identifica o utilizador*/
 	private String nome;
@@ -75,11 +75,11 @@ public class Utilizador implements Comparable, Serializable {
 	    Utilizador u = (Utilizador) o;
 		return email.compareTo(u.getEmail());
 	}
-
+/*
 	public Utilizador clone()
 	{
 		return new Utilizador(this);
-	}
+	}*/
 
 	public String toString()
 	{
@@ -89,7 +89,7 @@ public class Utilizador implements Comparable, Serializable {
 		str.append("\nMorada: ").append(morada);
 		SimpleDateFormat sdf = new SimpleDateFormat();
 		sdf.applyPattern("dd/MM/yyyy");
-		str.append("\nData de nascimento: ").append(sdf.format(dataNascimento.getTime()));
+		str.append("\nData de nascimento (dd/MM/yyyy): ").append(sdf.format(dataNascimento.getTime()));
 		return str.toString();
 	}
 

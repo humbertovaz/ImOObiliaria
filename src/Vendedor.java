@@ -106,8 +106,17 @@ public class Vendedor extends Utilizador implements Serializable{
     
     public String toString()
     {
-        String s = super.toString();
-		return s;
+		StringBuilder str = new StringBuilder("\n==========Vendedor==========\n");
+		str.append(super.toString());
+		str.append("\n");
+		str.append("\nImoveis à venda (id):\n");
+		for(String id: imoveisEmVenda)
+			str.append(id+"\n");
+		str.append("\nImoveis vendidos (id):\n");
+		for(String id: imoveisVendidos)
+			str.append(id+"\n");
+		str.append("\n============================\n");
+		return str.toString();
 	}
 	
 	public int hashCode()

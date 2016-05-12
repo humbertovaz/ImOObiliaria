@@ -26,7 +26,8 @@ public class Imobiliaria implements Serializable
     private Map<String, Utilizador> utilizadores;
     private Map<String, Imovel> imoveis;
     private Utilizador logged;
-
+    private Leilao leilao;
+    
     public Imobiliaria()
     {
         utilizadores = new HashMap<>();
@@ -37,6 +38,46 @@ public class Imobiliaria implements Serializable
     /*
      * VENDEDORES
      */
+
+    public Imovel getImovelFromId(String id)
+    {
+        return imoveis.get(id);
+    }
+    
+    public void criaLeilao() throws SemAutorizacaoException
+    {
+        if(logged == null || !(logged instanceof Vendedor))
+            throw new SemAutorizacaoException("Nao tem autorizacao para criar um leilao!");
+        
+        leilao = new Leilao(logged.getEmail());
+    }
+    
+    public void iniciaLeilao(Imovel im, int horas) throws SemAutorizacaoException, InterruptedException
+    {
+        if(logged == null || !(logged instanceof Vendedor))
+           throw new SemAutorizacaoException("Nao tem autorizaçao para iniciar um Leilao");
+        
+        if(!(logged.getEmail().equals(leilao.getLeiloeiro())))
+           throw new SemAutorizacaoException("Nao e o seu leilao");
+        
+        leilao.iniciaLeilao(im, horas);
+        
+    }
+    
+    public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos) throws LeilaoTerminadoException, SemAutorizacaoException
+    {
+        if(logged==null || !(logged instanceof Comprador)) throw new SemAutorizacaoException("Nao pode entrar no leilao");
+        
+        if(leilao.getTerminado()) throw new LeilaoTerminadoException("O leilao ja terminou");
+   
+        leilao.adicionaComprador(idComprador, limite, incrementos, minutos);
+    }
+    
+    public Comprador encerraLeilao()
+    {
+        return (Comprador) utilizadores.get(leilao.encerraLeilao());
+    }
+    
     /*para quando um vendedor esta loggado, vai acrescentar
       o imovel ao seu set de imoveis, e temos de acrescentar
       a este set tambem */
@@ -99,11 +140,7 @@ public class Imobiliaria implements Serializable
         imoveis.get(idImovel).setEstado(estado);
         
         if(Imovel.vendido(estado))
-        {
             v.setVendido(idImovel);
-            /*Retirar do map de imoveis !???*/
-        }
-        
     }
 
     public Set<String> getTopImoveis(int n) throws SemAutorizacaoException
@@ -113,6 +150,7 @@ public class Imobiliaria implements Serializable
 
         Vendedor v = (Vendedor) logged;
         Set<String> ids = v.getImoveisEmVenda();
+        ids.addAll(v.getImoveisVendidos());
 
         /*Ordenar por numero de consultas (Maior para o menor)*/
         return ids.stream().filter(i -> imoveis.get(i).getNumConsultas() >= n).collect(Collectors.toSet());
@@ -156,30 +194,21 @@ public class Imobiliaria implements Serializable
        // List<Imovel> ims = (List<String>) imoveis.values();
 
         return imoveis.values().stream().filter(i -> (i.getPrecoPedido() <= preco) && (i.getClass().getName().equals("src."+classe)))
-                                        .map(i -> {if(logged instanceof Vendedor) 
-                                                      return i.clone();
-                                                   else 
-                                                   {
-                                                      String email = (logged != null) ? logged.getEmail() : "nao registado";
-                                                      i.registaConsulta(email, new GregorianCalendar()); 
-                                                      return i.clone();
-                                                   }})
+                                        .map(i -> { String email = (logged != null) ? logged.getEmail() : "nao registado";
+                                                    i.registaConsulta(email, new GregorianCalendar()); 
+                                                    return i.clone();
+                                                  })
                                         .collect(Collectors.toList());
     }
 
-    /*So acrescento uma consulta se for um comprador a realizar a acçao*/
     public List<Habitavel> getHabitavel(int preco)
     {
 
         return imoveis.values().stream().filter(i -> (i.getPrecoPedido() <= preco) && (i instanceof Habitavel))
-                           .map(i -> {if(logged instanceof Vendedor) 
-                                         return (Habitavel) i.clone();
-                                      else 
-                                      {
-                                         String email = (logged != null) ? logged.getEmail() : "nao registado";
-                                         i.registaConsulta(email, new GregorianCalendar()); 
-                                         return (Habitavel) i.clone();
-                                      }})
+                           .map(i -> { String email = (logged != null) ? logged.getEmail() : "nao registado";
+                                       i.registaConsulta(email, new GregorianCalendar()); 
+                                       return (Habitavel) i.clone();
+                                     })
                            .collect(Collectors.toList());
     }
 
@@ -204,15 +233,10 @@ public class Imobiliaria implements Serializable
 
              for(String id: ids)
              {
-                if(logged instanceof Vendedor)
-                    mapIm.put(imoveis.get(id).clone(), v);
-                else
-                {
-                    Imovel im = imoveis.get(id);
-                    String email = logged != null ? logged.getEmail() : "nao registado";
-                    im.registaConsulta(email, new GregorianCalendar());
-                    mapIm.put(im, v);
-                }
+                 Imovel im = imoveis.get(id);
+                 String email = logged != null ? logged.getEmail() : "nao registado";
+                 im.registaConsulta(email, new GregorianCalendar());
+                 mapIm.put(im, v);
              }
          }
 
@@ -229,11 +253,9 @@ public class Imobiliaria implements Serializable
         if(utilizadores.containsKey(utilizador.getEmail()))
             throw new UtilizadorExistenteException("Utilizador ja existente");
 
-        utilizadores.put(utilizador.getEmail(), utilizador.clone());
+        utilizadores.put(utilizador.getEmail(), utilizador);/*.clone()*/
     }
-    
-    /*Ao fazer este método apercebi-me que se calhar deviamos ter uma 
-      lista de Utilizadores apenas, não sei, tenho que pensar*/
+
     public void iniciaSessao(String email, String password) throws SemAutorizacaoException, UtilizadorInexistenteException
     {/*
         if(logged != null)
@@ -303,5 +325,5 @@ public class Imobiliaria implements Serializable
     public boolean isCompradorLogged()
     {
         return logged != null ? logged instanceof Comprador : false;
-	}
+    }
 }

@@ -102,6 +102,7 @@ public class ImobiliariaApp
                                  opMainMenu[2],
                                  opMainMenu[3],
                                  opMainMenu[4],
+                                 "Adicionar compradores ao leilao",
                                  "Fechar Sessão" };
 
         String[] opVendMenu = { "Colocar um imovel á venda",
@@ -111,6 +112,8 @@ public class ImobiliariaApp
                                 opMainMenu[2],
                                 opMainMenu[3],
                                 opMainMenu[4],
+                                "Criar um Leilao",
+                                "Iniciar leilao",
                                 "Fechar Sessão"};
 
         String[] opUserMenu = { "Registar Comprador",
@@ -198,6 +201,9 @@ public class ImobiliariaApp
                 opGetMapeamento();
                 break;
             case 6:
+                opAdicionaComprador();
+                break;
+            case 7:
                 opFechaSessao();
                 cod = 0;
                 break;
@@ -236,6 +242,12 @@ public class ImobiliariaApp
                 opGetMapeamento();
                 break;
             case 8:
+                opCriaLeilao();
+                break;
+            case 9:
+                opIniciaLeilao();
+                break;
+            case 10:
                 opFechaSessao();
                 cod = 0;
                 break;
@@ -752,5 +764,56 @@ public class ImobiliariaApp
         cal.setTime(d);
 
         return (GregorianCalendar) cal;
+    }
+    
+    public static void opCriaLeilao()
+    {
+        try{
+            imobiliaria.criaLeilao();
+        }catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
+        System.out.println("Leilao criado com sucesso!");
+    }
+    
+    public static void opAdicionaComprador()
+    {
+        Scanner input = new Scanner(System.in);
+        String email;
+        double limite, incrementos, minutos;
+        
+        try{
+            System.out.print("Email: ");
+            email = input.nextLine();
+            System.out.print("Limite: ");
+            limite = input.nextDouble();
+            input.nextLine();
+            System.out.print("Incrementos: ");
+            incrementos = input.nextDouble();
+            input.nextLine();
+            System.out.print("Minutos: ");
+            minutos = input.nextDouble();
+            input.nextLine();
+            
+            imobiliaria.adicionaComprador(email, limite, incrementos, minutos);
+
+        }catch(NoSuchElementException e) {System.out.println(e.getMessage());}
+         catch(LeilaoTerminadoException e) {System.out.println(e.getMessage());}
+         catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
+    }
+    
+    public static void opIniciaLeilao()
+    {
+        Scanner input = new Scanner(System.in);
+        String id; int tempo;
+        try{
+            System.out.print("ID do imovel a leilao: ");
+            id = input.nextLine();
+            System.out.print("Duraçao: ");
+            tempo = input.nextInt();
+            imobiliaria.iniciaLeilao(imobiliaria.getImovelFromId(id), tempo);
+            System.out.println("Leilao a decorrer...");
+            Comprador c = imobiliaria.encerraLeilao();
+            System.out.println("O Vencedor do leilao foi o utilizador com email: "+c.getEmail());
+        }catch(SemAutorizacaoException e){System.out.println(e.getMessage());}
+         catch(InterruptedException e){System.out.println(e.getMessage());}
     }
 }
