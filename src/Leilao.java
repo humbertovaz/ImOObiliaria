@@ -8,6 +8,9 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import java.io.OutputStream;
+import java.io.IOException;
+
 
 // Considerar horas como minutos e minutos como segundos
 
@@ -55,7 +58,7 @@ public class Leilao implements Serializable
         licitadores = new HashMap<>(licit);
     }
 
-    public void iniciaLeilao(Imovel im, int horas) throws InterruptedException
+    public void iniciaLeilao(Imovel im, int horas) throws InterruptedException, IOException
     {
         /*Horas -> Minutos*/
         terminado = false;
@@ -66,11 +69,11 @@ public class Leilao implements Serializable
         
         for(Tuplo<Licitador, Long> t: licitadores.keySet())
         {
-            t.setSnd(time);
+            t.setSnd(new Long(time));
             licitadores.put(t, new Double(precoBase));
         }
         
-        simulaLeilao();
+        simulaLeilao(System.out);
     }
     
     public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos)
@@ -80,8 +83,9 @@ public class Leilao implements Serializable
         licitadores.put(tuplo, null);
     }
     
-    public void simulaLeilao() throws InterruptedException
+  /*public void simulaLeilao() throws InterruptedException
     {
+        double maiorLicit = 0;
         while(System.currentTimeMillis() <= finalLeilao)
         {
             for(Tuplo<Licitador, Long> t: licitadores.keySet())
@@ -100,6 +104,72 @@ public class Leilao implements Serializable
                 }
             }
             Thread.sleep(500);
+        }
+    }*/
+    
+    public void simulaLeilao(OutputStream arg) throws IOException //, InterruptedException
+    {
+        double maiorLicit = precoBase;
+        Licitador winner = null;
+        arg.write(inicio().getBytes());
+        while(System.currentTimeMillis() <= finalLeilao)
+        {
+            for(Tuplo<Licitador, Long> t: licitadores.keySet())
+            {
+                Licitador l = t.fst();
+                long next = t.snd();
+                double lastLicit = licitadores.get(t).doubleValue();
+                if(next <= System.currentTimeMillis())
+                {
+                    if(maiorLicit < l.getLimite())
+                    {    
+                        if(l.equals(winner))
+                        {
+                            arg.write(passaLicit(l).getBytes());
+                            long nextLicit = System.currentTimeMillis() + (long)(l.getMinutos()*1000);
+                            t.setSnd(new Long(nextLicit));
+                            licitadores.put(t, lastLicit);
+                        }
+                        else
+                        {
+                            double newLicit;
+                            if(lastLicit == maiorLicit)
+                            {
+                                newLicit = lastLicit + l.getIncrementos();
+                            }
+                            else{
+                                int nmrInc = (int) Math.ceil((maiorLicit - lastLicit) / l.getIncrementos());
+                                newLicit = lastLicit + ((nmrInc+1) * l.getIncrementos());
+                            }
+                            
+                            if(newLicit > l.getLimite()) 
+                                newLicit = l.getLimite(); 
+                            
+                            maiorLicit = newLicit;
+                            winner = l;
+
+                            long nextLicit = System.currentTimeMillis() + (long)(l.getMinutos()*1000);
+                            t.setSnd(new Long(nextLicit));
+                            licitadores.put(t, new Double(newLicit));
+                            arg.write(licitacao(l, maiorLicit).getBytes());
+                        }
+                    }
+                }
+            }
+            //Thread.sleep(500);
+        }
+    }
+    
+    public void simulaLeilaoV2(Imovel im, int horas)
+    {
+        terminado = false;
+        paraVenda = im.getId();
+        precoBase = im.getPrecoAceite();
+        long time = horas*60;
+        for(Tuplo<Licitador, Long> t: licitadores.keySet())
+        {
+            t.setSnd(new Long(0));
+            licitadores.put(t, new Double(precoBase));
         }
     }
     
@@ -121,6 +191,25 @@ public class Leilao implements Serializable
         
         terminado = true;
         return winner;
+    }
+    
+    private String inicio()
+    {
+        return "Inicio do leilao:\n";
+    }
+    
+    private String licitacao(Licitador l, double licit)
+    {
+        StringBuilder str = new StringBuilder();
+        str.append(l.getIdComprador()).append(" licitou ").append(licit);
+        return str.toString()+"\n";
+    }
+    
+    private String passaLicit(Licitador l)
+    {
+        StringBuilder str = new StringBuilder();
+        str.append(l.getIdComprador()).append(" ja esta a vencer.");
+        return str.toString();
     }
     
 }

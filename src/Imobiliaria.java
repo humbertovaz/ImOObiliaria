@@ -52,7 +52,7 @@ public class Imobiliaria implements Serializable
         leilao = new Leilao(logged.getEmail());
     }
     
-    public void iniciaLeilao(Imovel im, int horas) throws SemAutorizacaoException, InterruptedException
+    public void iniciaLeilao(Imovel im, int horas) throws SemAutorizacaoException, InterruptedException, IOException
     {
         if(logged == null || !(logged instanceof Vendedor))
            throw new SemAutorizacaoException("Nao tem autorizaçao para iniciar um Leilao");

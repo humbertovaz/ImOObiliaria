@@ -815,5 +815,6 @@ public class ImobiliariaApp
             System.out.println("O Vencedor do leilao foi o utilizador com email: "+c.getEmail());
         }catch(SemAutorizacaoException e){System.out.println(e.getMessage());}
          catch(InterruptedException e){System.out.println(e.getMessage());}
+         catch(IOException e) {System.out.println(e.getMessage());}
     }
 }
