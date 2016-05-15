@@ -83,31 +83,7 @@ public class Leilao implements Serializable
         licitadores.put(tuplo, null);
     }
     
-  /*public void simulaLeilao() throws InterruptedException
-    {
-        double maiorLicit = 0;
-        while(System.currentTimeMillis() <= finalLeilao)
-        {
-            for(Tuplo<Licitador, Long> t: licitadores.keySet())
-            {
-                Licitador l = t.fst();
-                long next = t.snd();
-                double lastLicit = licitadores.get(t).doubleValue();
-                if(next <= System.currentTimeMillis())
-                {
-                    if(lastLicit + l.getIncrementos() <= l.getLimite())
-                    {
-                        long nextLicit = System.currentTimeMillis() + (long)(l.getMinutos()*1000);
-                        t.setSnd(new Long(nextLicit));
-                        licitadores.put(t, new Double(lastLicit + l.getIncrementos()));
-                    }
-                }
-            }
-            Thread.sleep(500);
-        }
-    }*/
-    
-    public void simulaLeilao(OutputStream arg) throws IOException //, InterruptedException
+    public void simulaLeilao(OutputStream arg) throws IOException, InterruptedException
     {
         double maiorLicit = precoBase;
         Licitador winner = null;
@@ -156,7 +132,7 @@ public class Leilao implements Serializable
                     }
                 }
             }
-            //Thread.sleep(500);
+            Thread.sleep(500);
         }
     }
     
@@ -166,10 +142,55 @@ public class Leilao implements Serializable
         paraVenda = im.getId();
         precoBase = im.getPrecoAceite();
         long time = horas*60;
+        Licitador winner = null;
+        double maiorLicit = precoBase;
         for(Tuplo<Licitador, Long> t: licitadores.keySet())
         {
-            t.setSnd(new Long(0));
+            t.setSnd(new Long((long)t.fst().getMinutos()));
             licitadores.put(t, new Double(precoBase));
+        }
+        
+        for(int i = 0; i < time; i++)
+        {
+            for(Tuplo<Licitador, Long> t: licitadores.keySet())
+            {
+                if((int) t.snd().longValue() == i)
+                {
+                    if(maiorLicit < t.fst().getLimite())
+                    {
+                        double lastLicit = licitadores.get(t);
+                        if(t.fst().equals(winner))
+                        {
+                            long nextLicit = (long) i + (long) t.fst().getMinutos();
+                            t.setSnd(new Long(nextLicit));
+                            licitadores.put(t, lastLicit);
+                        }
+                        else
+                        {
+                            double newLicit;
+                            if(lastLicit == maiorLicit)
+                            {
+                                newLicit = lastLicit + t.fst().getIncrementos();
+                            }
+                            else{
+                                int nmrInc = (int) Math.ceil((maiorLicit - lastLicit) / t.fst().getIncrementos());
+                                newLicit = lastLicit + ((nmrInc+1) * t.fst().getIncrementos());
+                            }
+                            
+                            if(newLicit > t.fst().getLimite()) 
+                                newLicit = t.fst().getLimite(); 
+                            
+                            maiorLicit = newLicit;
+                            winner = t.fst();
+                            
+                            long nextLicit = (long) i + (long) t.fst().getMinutos();
+                            t.setSnd(new Long(nextLicit));
+                            licitadores.put(t, newLicit);
+
+                        }
+                    }
+                }
+            }
         }
     }
     

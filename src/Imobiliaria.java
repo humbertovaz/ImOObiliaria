@@ -60,8 +60,8 @@ public class Imobiliaria implements Serializable
         if(!(logged.getEmail().equals(leilao.getLeiloeiro())))
            throw new SemAutorizacaoException("Nao e o seu leilao");
         
-        leilao.iniciaLeilao(im, horas);
-        
+        /*leilao.iniciaLeilao(im, horas);*/
+        leilao.simulaLeilaoV2(im, horas);
     }
     
     public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos) throws LeilaoTerminadoException, SemAutorizacaoException
