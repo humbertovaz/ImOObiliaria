@@ -1,0 +1,736 @@
+
+------------- LOG ----- LOG ----- LOG -------------
+
+Email: primeiro@gmail.com
+Nome: primeiro
+Morada: morada
+Data de nascimento: 09/09/1980
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+Email: primeiro@gmail.com
+Nome: primeiro
+Morada: morada
+Data de nascimento: 09/09/1980
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: pedro@gmail.com
+Nome: Pedro
+Morada: morada
+Data de nascimento: 12/12/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Email: primeiro@gmail.com
+Nome: primeiro
+Morada: morada
+Data de nascimento: 09/09/1980
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: pedro@gmail.com
+Nome: Pedro
+Morada: morada
+Data de nascimento: 12/12/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Email: primeiro@gmail.com
+Nome: primeiro
+Morada: morada
+Data de nascimento: 09/09/1980
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: pedro@gmail.com
+Nome: Pedro
+Morada: morada
+Data de nascimento: 12/12/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Email: primeiro@gmail.com
+Nome: primeiro
+Morada: morada
+Data de nascimento: 09/09/1980
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: comprador2@gmail.com
+Nome: comprador2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Vendedor==========
+
+Email: vendedor1@gmail.com
+Nome: vendedor1@gmail.com
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: comprador2@gmail.com
+Nome: comprador2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: comprador1@gmail.com
+Nome: comprador1
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 2000.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Vendedor==========
+
+Email: vendedor1@gmail.com
+Nome: vendedor1@gmail.com
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: comprador2@gmail.com
+Nome: comprador2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: comprador1@gmail.com
+Nome: comprador1
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 2000.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Vendedor==========
+
+Email: vendedor1@gmail.com
+Nome: vendedor1@gmail.com
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: comprador2@gmail.com
+Nome: comprador2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: comprador1@gmail.com
+Nome: comprador1
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 2000.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Vendedor==========
+
+Email: vendedor1@gmail.com
+Nome: vendedor1@gmail.com
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: comprador2@gmail.com
+Nome: comprador2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: comprador1@gmail.com
+Nome: comprador1
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 2000.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: umV
+Nome: umV
+Morada: umV
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 2500.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 23/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 19/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: tre
+Data de nascimento (dd/MM/yyyy): 17/08/1995
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+precoPedido: 1234.0
+tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+nrQuartos: 3
+------------- LOG ----- LOG ----- LOG -------------
