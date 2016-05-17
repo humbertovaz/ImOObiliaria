@@ -107,6 +107,16 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
     {
         numConsultas += 1;
     }
+    
+    public boolean estaReservado()
+    {
+        return estado.equals(estados[1]);
+    }
+    
+    public boolean foiVendido()
+    {
+        return estado.equals(estados[2]);
+    }
 
     public int compareTo(Imovel i) 
     { 

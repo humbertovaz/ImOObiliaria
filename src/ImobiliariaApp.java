@@ -102,7 +102,7 @@ public class ImobiliariaApp
                                  opMainMenu[2],
                                  opMainMenu[3],
                                  opMainMenu[4],
-                                 "Adicionar compradores ao leilao",
+                                 "Entrar no leilao",
                                  "Fechar Sessão" };
 
         String[] opVendMenu = { "Colocar um imovel á venda",
@@ -358,13 +358,16 @@ public class ImobiliariaApp
                 id = input.nextLine();
                 System.out.print("Rua: ");
                 rua = input.nextLine();
-                System.out.print("Estado: ");
-                estado = input.nextLine();
+                System.out.print("Estado (venda/reservado/vendido): ");
+                do{
+                    estado = input.nextLine();
+                }while(!Imovel.validaEstado(estado));
                 System.out.print("Preço Pedido: ");
                 precoPedido = input.nextDouble();
+                input.nextLine();
                 System.out.print("Preço Aceite: ");
                 precoAceite = input.nextDouble();
-                
+                input.nextLine();
                 switch(op)
                 {
                     case 1:
@@ -761,8 +764,8 @@ public class ImobiliariaApp
 
         Date d = new SimpleDateFormat(format).parse(data);
         Calendar cal = Calendar.getInstance();
-        cal.setTime(d);
-
+        cal.setTime(d);        
+        
         return (GregorianCalendar) cal;
     }
     
@@ -781,8 +784,7 @@ public class ImobiliariaApp
         double limite, incrementos, minutos;
         
         try{
-            System.out.print("Email: ");
-            email = input.nextLine();
+            email = imobiliaria.loggedEmail();
             System.out.print("Limite: ");
             limite = input.nextDouble();
             input.nextLine();
@@ -809,12 +811,17 @@ public class ImobiliariaApp
             id = input.nextLine();
             System.out.print("Duraçao: ");
             tempo = input.nextInt();
-            imobiliaria.iniciaLeilao(imobiliaria.getImovelFromId(id), tempo);
             System.out.println("Leilao a decorrer...");
+            imobiliaria.iniciaLeilao(imobiliaria.getImovelFromId(id), tempo);
             Comprador c = imobiliaria.encerraLeilao();
+            imobiliaria.setEstado(id, "reservado");
             System.out.println("O Vencedor do leilao foi o utilizador com email: "+c.getEmail());
         }catch(SemAutorizacaoException e){System.out.println(e.getMessage());}
          catch(InterruptedException e){System.out.println(e.getMessage());}
          catch(IOException e) {System.out.println(e.getMessage());}
+         catch(ImovelInexistenteException e) {System.out.println(e.getMessage());}
+         catch(LeilaoSemLicitadoresException e) {System.out.println(e.getMessage());}
+         catch(LeilaoInexistenteException e) {System.out.println(e.getMessage());}
+         catch(EstadoInvalidoException e) {System.out.println(e.getMessage());}
     }
 }

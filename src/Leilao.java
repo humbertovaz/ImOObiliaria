@@ -8,6 +8,10 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 
+import java.util.Comparator;
+
+import java.util.PriorityQueue;
+
 import java.io.OutputStream;
 import java.io.IOException;
 
@@ -58,7 +62,7 @@ public class Leilao implements Serializable
         licitadores = new HashMap<>(licit);
     }
 
-    public void iniciaLeilao(Imovel im, int horas) throws InterruptedException, IOException
+    public void iniciaLeilao(Imovel im, int horas) throws InterruptedException, IOException, LeilaoSemLicitadoresException
     {
         /*Horas -> Minutos*/
         terminado = false;
@@ -66,6 +70,9 @@ public class Leilao implements Serializable
         precoBase = im.getPrecoAceite();
         long time = System.currentTimeMillis();
         finalLeilao = time + (horas * 60 * 1000);
+        
+        if(licitadores.isEmpty())
+            throw new LeilaoSemLicitadoresException("Leilao ainda nao tem licitadores!");
         
         for(Tuplo<Licitador, Long> t: licitadores.keySet())
         {
@@ -87,7 +94,6 @@ public class Leilao implements Serializable
     {
         double maiorLicit = precoBase;
         Licitador winner = null;
-        arg.write(inicio().getBytes());
         while(System.currentTimeMillis() <= finalLeilao)
         {
             for(Tuplo<Licitador, Long> t: licitadores.keySet())
@@ -136,64 +142,6 @@ public class Leilao implements Serializable
         }
     }
     
-    public void simulaLeilaoV2(Imovel im, int horas)
-    {
-        terminado = false;
-        paraVenda = im.getId();
-        precoBase = im.getPrecoAceite();
-        long time = horas*60;
-        Licitador winner = null;
-        double maiorLicit = precoBase;
-        for(Tuplo<Licitador, Long> t: licitadores.keySet())
-        {
-            t.setSnd(new Long((long)t.fst().getMinutos()));
-            licitadores.put(t, new Double(precoBase));
-        }
-        
-        for(int i = 0; i < time; i++)
-        {
-            for(Tuplo<Licitador, Long> t: licitadores.keySet())
-            {
-                if((int) t.snd().longValue() == i)
-                {
-                    if(maiorLicit < t.fst().getLimite())
-                    {
-                        double lastLicit = licitadores.get(t);
-                        if(t.fst().equals(winner))
-                        {
-                            long nextLicit = (long) i + (long) t.fst().getMinutos();
-                            t.setSnd(new Long(nextLicit));
-                            licitadores.put(t, lastLicit);
-                        }
-                        else
-                        {
-                            double newLicit;
-                            if(lastLicit == maiorLicit)
-                            {
-                                newLicit = lastLicit + t.fst().getIncrementos();
-                            }
-                            else{
-                                int nmrInc = (int) Math.ceil((maiorLicit - lastLicit) / t.fst().getIncrementos());
-                                newLicit = lastLicit + ((nmrInc+1) * t.fst().getIncrementos());
-                            }
-                            
-                            if(newLicit > t.fst().getLimite()) 
-                                newLicit = t.fst().getLimite(); 
-                            
-                            maiorLicit = newLicit;
-                            winner = t.fst();
-                            
-                            long nextLicit = (long) i + (long) t.fst().getMinutos();
-                            t.setSnd(new Long(nextLicit));
-                            licitadores.put(t, newLicit);
-
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
     public String encerraLeilao()
     {
         Iterator<Map.Entry<Tuplo<Licitador, Long>, Double>> it = licitadores.entrySet().iterator();
@@ -229,7 +177,7 @@ public class Leilao implements Serializable
     private String passaLicit(Licitador l)
     {
         StringBuilder str = new StringBuilder();
-        str.append(l.getIdComprador()).append(" ja esta a vencer.");
+        str.append(l.getIdComprador()).append(" ja esta a vencer.\n");
         return str.toString();
     }
     

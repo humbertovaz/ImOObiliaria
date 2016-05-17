@@ -94,6 +94,11 @@ public class Vendedor extends Utilizador implements Serializable{
         return success;
     }
     
+    public boolean emVenda(String id)
+    {
+        return imoveisEmVenda.contains(id);
+    }
+    
     public boolean equals(Object o)
     {
         return this.equals(o);

@@ -35,6 +35,14 @@ public class Imobiliaria implements Serializable
         logged = null;
     }
 
+    public String loggedEmail() throws SemAutorizacaoException
+    {
+        if(logged == null)
+            throw new SemAutorizacaoException("Nao esta loggado");
+        
+        return logged.getEmail();
+    }
+    
     /*
      * VENDEDORES
      */
@@ -52,16 +60,27 @@ public class Imobiliaria implements Serializable
         leilao = new Leilao(logged.getEmail());
     }
     
-    public void iniciaLeilao(Imovel im, int horas) throws SemAutorizacaoException, InterruptedException, IOException
+    public void iniciaLeilao(Imovel im, int horas) throws ImovelInexistenteException, SemAutorizacaoException, InterruptedException, IOException, LeilaoSemLicitadoresException, LeilaoInexistenteException
     {
+        if(leilao == null)
+            throw new LeilaoInexistenteException("Ainda nao foi criado um leilao!");
+        
         if(logged == null || !(logged instanceof Vendedor))
            throw new SemAutorizacaoException("Nao tem autorizaçao para iniciar um Leilao");
         
+        Vendedor v = (Vendedor) logged;
+           
+        if(!(imoveis.containsKey(im.getId())) || !(v.emVenda(im.getId())))
+            throw new ImovelInexistenteException("Imovel inexistente ou nao e seu para vender!");
+        
         if(!(logged.getEmail().equals(leilao.getLeiloeiro())))
            throw new SemAutorizacaoException("Nao e o seu leilao");
-        
-        /*leilao.iniciaLeilao(im, horas);*/
-        leilao.simulaLeilaoV2(im, horas);
+       
+        if(!(im.estaReservado()) || !(im.foiVendido()))
+            throw new SemAutorizacaoException("Nao pode leiloar este imovel, verifique o seu estado!");
+           
+        leilao.iniciaLeilao(im, horas);
+        leilao.simulaLeilao(System.out);
     }
     
     public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos) throws LeilaoTerminadoException, SemAutorizacaoException
@@ -72,7 +91,7 @@ public class Imobiliaria implements Serializable
    
         leilao.adicionaComprador(idComprador, limite, incrementos, minutos);
     }
-    
+
     public Comprador encerraLeilao()
     {
         return (Comprador) utilizadores.get(leilao.encerraLeilao());
