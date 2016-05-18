@@ -19,6 +19,10 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
     private int andar;
     private boolean garagem;
 
+    /**
+     * Apartamento Constructor
+     *
+     */
     public Apartamento(){
         super();
         tipo = "";
@@ -31,6 +35,22 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
         
     }
     
+    /**
+     * Apartamento Constructor
+     *
+     * @param id A parameter
+     * @param rua A parameter
+     * @param estado A parameter
+     * @param precoPedido A parameter
+     * @param precoAceite A parameter
+     * @param tipo A parameter
+     * @param area A parameter
+     * @param nrQuartos A parameter
+     * @param nrWC A parameter
+     * @param nrPorta A parameter
+     * @param andar A parameter
+     * @param garagem A parameter
+     */
     public Apartamento(String id,String rua,String estado, double precoPedido, double precoAceite, String tipo, int area, int nrQuartos, int nrWC, int nrPorta, int andar, boolean garagem) {
         super(id,rua, estado, precoPedido, precoAceite);
         this.tipo = tipo;
@@ -42,6 +62,11 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
         this.garagem = garagem;
         
     }
+    /**
+     * Apartamento Constructor
+     *
+     * @param o A parameter
+     */
     public Apartamento (Apartamento o){
         super(o);
         tipo = o.getTipo();
@@ -53,6 +78,12 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
         garagem = o.getGaragem();
     }
 
+    /**
+     * Method validaTipo
+     *
+     * @param tipo A parameter
+     * @return The return value
+     */
     public static boolean validaTipo(String tipo)
     {
         boolean valido = false;
@@ -113,14 +144,36 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
     public String toString() {
         StringBuilder str = new StringBuilder("Apartamento: ");
         str.append(super.toString());
-        str.append("\ntipo "); str.append(tipo); 
-        str.append("\narea "); str.append(area);
-        str.append("\nnrQuartos "); str.append(nrQuartos);
-        str.append("\nnrWC "); str.append(nrWC);
-        str.append("\nnrPorta "); str.append(nrPorta);
-        str.append("\nandar "); str.append(andar);
-        str.append("\ngaragem "); str.append(garagem);
-        str.append("\n");
+        str.append("\nTipo "); str.append(tipo); 
+        str.append("\nArea "); str.append(area);
+        str.append("\nNumero de quartos "); str.append(nrQuartos);
+        str.append("\nNumero de WC "); str.append(nrWC);
+        str.append("\nNumero de Porta "); str.append(nrPorta);
+        str.append("\nAndar "); str.append(andar);
+        str.append("\nTem garagem? "); 
+        if(garagem)
+            str.append("Sim\n");
+        else
+            str.append("Nao\n");
+
+        return str.toString();
+    }
+    
+    public String toStringInc()
+    {
+        StringBuilder str = new StringBuilder("parte habitavel: ");
+        str.append("\nTipo "); str.append(tipo); 
+        str.append("\nArea "); str.append(area);
+        str.append("\nNumero de quartos "); str.append(nrQuartos);
+        str.append("\nNumero de WC "); str.append(nrWC);
+        str.append("\nNumero de Porta "); str.append(nrPorta);
+        str.append("\nAndar "); str.append(andar);
+        str.append("\nTem garagem? "); 
+        if(garagem)
+            str.append("Sim\n");
+        else
+            str.append("Nao\n");
+            
         return str.toString();
     }
     

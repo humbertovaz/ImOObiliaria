@@ -19,15 +19,24 @@ public abstract class Utilizador implements Comparable, Serializable {
 	private String morada;
     GregorianCalendar dataNascimento;
     
-    /*
-        Construtures
-    */
-
+    /**
+     * Utilizador Constructor
+     *
+     */
     public Utilizador (){
 		email = nome = password = morada = "";
         this.dataNascimento = new GregorianCalendar();
     }
     
+    /**
+     * Utilizador Constructor
+     *
+     * @param email A parameter
+     * @param nome A parameter
+     * @param password A parameter
+     * @param morada A parameter
+     * @param dataNascimento A parameter
+     */
     public Utilizador(String email, String nome, String password, String morada, GregorianCalendar dataNascimento) {
         this.email = email;
         this.nome = nome;
@@ -36,15 +45,19 @@ public abstract class Utilizador implements Comparable, Serializable {
         this.dataNascimento = (GregorianCalendar) dataNascimento.clone();
     }
 
+    /**
+     * Utilizador Constructor
+     *
+     * @param a A parameter
+     */
     public Utilizador(Utilizador a){
         this(a.getEmail(), a.getNome(), a.getPassword(), a.getMorada(), a.getDataNascimento());
     }
     
-  
-
-    /*
-    gets e sets
+    /**
+     * Getters e Setters
      */
+    
     public String getEmail() { return email; }
     public String getNome() { return nome; }
     private String getPassword() { return password; }
@@ -57,6 +70,14 @@ public abstract class Utilizador implements Comparable, Serializable {
     public void setMorada(String morada) { this.morada = morada; }
     public void setDataNascimento(GregorianCalendar dataNascimento) { this.dataNascimento = (GregorianCalendar) dataNascimento.clone(); }
 
+    /**
+     * Metodo changePassword
+     *
+     * @param email email do user
+     * @param oldPassword password antiga
+     * @param newPassword password nova
+     * @return se foi ou nao mudada a password
+     */
     public boolean changePassword(String email, String oldPassword, String newPassword)
     {
         boolean result = email.equals(this.email) && oldPassword.equals(password);
@@ -65,21 +86,23 @@ public abstract class Utilizador implements Comparable, Serializable {
         return result;
     }
     
+    /**
+     * Metodo verificaPassword
+     *
+     * @param pass password a verificar
+     * @return se e ou nao a password deste user
+     */
     public boolean verificaPassword(String pass)
 	{
 		return password.equals(pass);
 	}
     
+	
 	public int compareTo(Object o)
 	{
 	    Utilizador u = (Utilizador) o;
 		return email.compareTo(u.getEmail());
 	}
-/*
-	public Utilizador clone()
-	{
-		return new Utilizador(this);
-	}*/
 
 	public String toString()
 	{

@@ -269,7 +269,7 @@ public class ImobiliariaApp
 
         tipoUserMenu.executa();
         op = tipoUserMenu.getOpcao();
-        if(op != 0)
+        if(op == 1 || op == 2)
         {
             try{
                 System.out.print("Email: ");
@@ -301,7 +301,8 @@ public class ImobiliariaApp
         }
         else
         {
-            System.out.println("Opçao inválida, registo cancelado!\n");
+            if(op != 0)
+                System.out.println("Opçao inválida, registo cancelado!\n");
         }
         input.close();
     }
@@ -627,7 +628,7 @@ public class ImobiliariaApp
         else{
             System.out.println("\nImoveis (id) com preco ate "+preco+":");
             for(Imovel i: im)
-                System.out.println(i.toString());
+                System.out.println(i.toString()+"\n");
         }
         input.close();
     }
@@ -654,7 +655,7 @@ public class ImobiliariaApp
              for(Habitavel h: im)
              {
                 Imovel i = (Imovel) h;
-                System.out.println(i.toString());
+                System.out.println(i.toString()+"\n");
              }
          }
          

@@ -16,6 +16,7 @@ public class Menu {
     // variáveis de instância
     private List<String> opcoes;
     private int op;
+    private String title;
     
     /**
      * Constructor for objects of class Menu
@@ -25,6 +26,12 @@ public class Menu {
         for (String op : opcoes) 
             this.opcoes.add(op);
         this.op = 0;
+    }
+    
+    public Menu(String[] opcoes, String title)
+    {
+        this(opcoes);
+        this.title = title;
     }
 
     /**
@@ -40,7 +47,7 @@ public class Menu {
     
     /** Apresentar o menu */
     private void showMenu() {
-        System.out.println("\n *** Menu *** ");
+        System.out.println("\n *** "+title+" *** ");
         for (int i=0; i<this.opcoes.size(); i++) {
             System.out.print(i+1);
             System.out.print(" - ");

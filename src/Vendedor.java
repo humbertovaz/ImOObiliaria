@@ -11,13 +11,6 @@ import java.util.Iterator;
 
 import java.io.Serializable;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
  * O vendedor é a entidade responsável pela gestão dos anúncios de imóveis para
@@ -25,6 +18,7 @@ import java.io.Serializable;
 *  Portfólio de imóveis em venda;
 *  Histórico de imóveis vendidos;
  */
+
 public class Vendedor extends Utilizador implements Serializable{
     private Set<String> imoveisEmVenda; //id's dos imoveis à venda
     private Set<String> imoveisVendidos; //id's dos imoveis vendidos
@@ -97,6 +91,11 @@ public class Vendedor extends Utilizador implements Serializable{
     public boolean emVenda(String id)
     {
         return imoveisEmVenda.contains(id);
+    }
+    
+    public boolean vendido(String id)
+    {
+        return imoveisVendidos.contains(id);
     }
     
     public boolean equals(Object o)

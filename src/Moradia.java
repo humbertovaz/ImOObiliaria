@@ -19,6 +19,20 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
     private int areaTerrenoEnv;
     private int nrQuartos;
 
+    /**
+     * Moradia Constructor
+     *
+     * @param id A parameter
+     * @param rua A parameter
+     * @param estado A parameter
+     * @param precoPedido A parameter
+     * @param precoAceite A parameter
+     * @param tipo A parameter
+     * @param areaImplantacao A parameter
+     * @param areaTotalCoberta A parameter
+     * @param areaTerrenoEnv A parameter
+     * @param nrQuartos A parameter
+     */
     public Moradia(String id, String rua, String estado, double precoPedido, double precoAceite, String tipo, int areaImplantacao, int areaTotalCoberta, int areaTerrenoEnv, int nrQuartos){
         super(id, rua, estado, precoPedido,precoAceite);
         this.areaImplantacao = areaImplantacao;
@@ -28,6 +42,11 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
         this.tipo = tipo;
     }
     
+    
+    /**
+     * Moradia Constructor
+     *
+     */
     public Moradia(){
         super();
         tipo = "";
@@ -37,6 +56,11 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
         nrQuartos = 0;
     }
     
+     /**
+      * Moradia Constructor
+      *
+      * @param o A parameter
+      */
      public Moradia (Moradia o){
         super(o);
         tipo = o.getTipo();
@@ -47,6 +71,12 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
        
     }
     
+    /**
+     * Method validaTipo
+     *
+     * @param tipo A parameter
+     * @return The return value
+     */
     public static boolean validaTipo(String tipo)
     {
         boolean valido = false;
@@ -105,11 +135,11 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
     public String toString() {
         StringBuilder str = new StringBuilder("Moradia: ");
         str.append(super.toString());
-        str.append("\ntipo: ").append(tipo);
+        str.append("\nTipo: ").append(tipo);
         str.append("\nArea implantaçao: ").append(areaImplantacao);
         str.append("\nArea Total coberta: ").append(areaTotalCoberta);
         str.append("\nArea Terreno envolvente: ").append(areaTerrenoEnv);
-        str.append("\nnrQuartos: ").append(nrQuartos);
+        str.append("\nNumero de Quartos: ").append(nrQuartos);
         return str.toString();
     }
 

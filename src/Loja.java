@@ -17,6 +17,10 @@ public class Loja extends Imovel implements Serializable {
     String tipoNegocio;
     int numeroDePorta;
 
+    /**
+     * Loja Constructor
+     *
+     */
     public Loja(){
         super();
         area = 0;
@@ -25,6 +29,19 @@ public class Loja extends Imovel implements Serializable {
         numeroDePorta = 0;
     }
     
+    /**
+     * Loja Constructor
+     *
+     * @param id A parameter
+     * @param rua A parameter
+     * @param estado A parameter
+     * @param precoPedido A parameter
+     * @param precoAceite A parameter
+     * @param area A parameter
+     * @param wc A parameter
+     * @param tipoNegocio A parameter
+     * @param numeroDePorta A parameter
+     */
     public Loja(String id, String rua, String estado, double precoPedido, double precoAceite, int area, boolean wc, String tipoNegocio, int numeroDePorta) {
         super(id, rua,estado, precoPedido, precoAceite);
         this.area = area;
@@ -33,6 +50,11 @@ public class Loja extends Imovel implements Serializable {
         this.numeroDePorta = numeroDePorta;
     }
     
+    /**
+     * Loja Constructor
+     *
+     * @param l A parameter
+     */
     public Loja (Loja l){
         super(l);
         area=l.getArea();
@@ -41,10 +63,9 @@ public class Loja extends Imovel implements Serializable {
         numeroDePorta =l.getNumeroDePorta();
     }
    
-    /*
-    	getters e setters
-    */
-    
+    /**
+     * getters e setters
+     */
 
     public int getArea() { return area; }
     public boolean getWc() { return wc; }
@@ -55,6 +76,10 @@ public class Loja extends Imovel implements Serializable {
     public void setWc(boolean wc) { this.wc = wc; }
     public void setTipoNegocio(String tipoNegocio) { this.tipoNegocio = tipoNegocio; }
     public void setNumeroDePorta(int numeroDePorta) { this.numeroDePorta = numeroDePorta; }
+    
+    /**
+     * equals, clone, toString, hashCode
+     */
     
     public boolean equals(Object o){
         if (o==this) return true;
@@ -72,10 +97,14 @@ public class Loja extends Imovel implements Serializable {
     }
     
     public String toString(){
-        StringBuilder sb= new StringBuilder("Loja: \n");
+        StringBuilder sb= new StringBuilder("Loja:");
         sb.append(super.toString());
         sb.append("Area: ").append(area).append("\n");
-        sb.append("Wc: ").append(wc).append("\n");
+        sb.append("Wc: ");
+        if(wc)
+            sb.append("Sim\n");
+        else
+            sb.append("Nao\n");
         sb.append("Tipo de Negocio: ").append(tipoNegocio).append("\n");
         sb.append("Numero de Porta : ").append(numeroDePorta).append("\n");
       

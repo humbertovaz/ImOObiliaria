@@ -21,10 +21,13 @@ public class Terreno extends Imovel implements Serializable{
     private double kWhmax; 
     private boolean redeEsgotos;
     
-    /*
-        Contrutores
-    */
+    /**
+     * Construtores
+     */
    
+    /**
+     * Construtor vazio de Terreno
+     */
     public Terreno(){
         super();
         this.area=0;
@@ -34,6 +37,9 @@ public class Terreno extends Imovel implements Serializable{
         this.redeEsgotos=false;
     }
     
+    /**
+     * Construtor por parametros de Terreno
+     */
     public Terreno(String id,String rua,String estado, double precoPedido, double precoAceite, int area, String tipoConstrucao, double diametro, double kWhmax, boolean redeEsgotos) {
         super(id,rua, estado, precoPedido,precoAceite);
         this.area = area;
@@ -43,6 +49,11 @@ public class Terreno extends Imovel implements Serializable{
         this.redeEsgotos = redeEsgotos;
     }
     
+    /**
+     * Construtor por copia de Terreno
+     *
+     * @param t 
+     */
     public Terreno(Terreno t){
         super(t);
         area = t.getArea();
@@ -52,6 +63,12 @@ public class Terreno extends Imovel implements Serializable{
         redeEsgotos = t.getRedeEsgotos();
     }
     
+    /**
+     * Metodo validaTipoConstrucao
+     *
+     * @param tipo tipo de terreno
+     * @return resultado da verificacao da validade do tipo
+     */
     public static boolean validaTipoConstrucao(String tipo)
     {
         boolean valido = false;
@@ -68,9 +85,9 @@ public class Terreno extends Imovel implements Serializable{
         return valido;
     }
     
-    /*
-    getters  e setters
-    */
+    /**
+     * Getters e Setters
+     */
 
     public int getArea() { return area; }
     public String getTipoConstrucao() { return tipoConstrucao; }
@@ -84,9 +101,9 @@ public class Terreno extends Imovel implements Serializable{
     public void setkWhmax(double kWhmax) { this.kWhmax = kWhmax; }
     public void setRedeEsgotos(boolean redeEsgotos) { this.redeEsgotos = redeEsgotos; }
     
-    /*
-        Equals clone e toString
-    */
+    /**
+     * Equals, clone, toString e hashCode
+     */
 
     public boolean equals(Object o){
         if (o==this) return true;
@@ -111,7 +128,11 @@ public class Terreno extends Imovel implements Serializable{
         sb.append("Tipo de Construcao: ").append(tipoConstrucao).append("\n");
         sb.append("Diametro Canalizacoes: ").append(diametro).append("\n");
         sb.append("kWh Maximo: ").append(kWhmax).append("\n");
-        sb.append("Rede Esgotos: ").append(redeEsgotos).append("\n");
+        sb.append("Rede Esgotos: ");
+        if(redeEsgotos)
+            sb.append("Sim\n");
+        else
+            sb.append("Nao\n");
       
         return sb.toString();
     }    
