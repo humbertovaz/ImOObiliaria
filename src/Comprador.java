@@ -11,7 +11,7 @@ import java.io.Serializable;
 
 public class Comprador extends Utilizador implements Serializable{
 
-    Set<String> favoritos;
+    private Set<String> favoritos;
 
     public Comprador()
     {

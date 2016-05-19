@@ -16,7 +16,7 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
     private static String[] estados = {"venda", "reservado", "vendido"};
     private String id;
     private String rua;
-    private String estado; // (emVenda, reservado, vendido) enum!?
+    private String estado;
     private double precoPedido;
     private double precoAceite;
     private int numConsultas;
@@ -169,6 +169,7 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
     @Override
     public boolean equals(Object o){
     if (this==o) return true;
+    
     if (o==null || o.getClass()!=this.getClass()) return false;
     
     Imovel i = (Imovel) o;
@@ -178,7 +179,8 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
            estado.equals(i.getEstado()) &&
            precoPedido==i.getPrecoPedido() && 
            precoAceite==i.getPrecoAceite() &&
-           numConsultas == i.getNumConsultas());
+           consultas.equals(i.getConsultas())
+           );
     }
     
     @Override

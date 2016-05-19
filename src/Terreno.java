@@ -107,12 +107,13 @@ public class Terreno extends Imovel implements Serializable{
 
     public boolean equals(Object o){
         if (o==this) return true;
+        
         if (o==null || o.getClass()!=this.getClass())return false;
- 
+
         Terreno t = (Terreno) o;
         return (super.equals(t)
                && t.getArea()== area
-               && t.getTipoConstrucao()== tipoConstrucao
+               && t.getTipoConstrucao().equals(tipoConstrucao)
                && t.getDiametro()== diametro
                && t.getkWhmax()== kWhmax
                && t.getRedeEsgotos()== redeEsgotos);

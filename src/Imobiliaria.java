@@ -22,6 +22,7 @@ import java.util.Comparator;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.GregorianCalendar;
+import java.util.Collection;
 
 import java.io.Serializable;
 
@@ -134,7 +135,7 @@ public class Imobiliaria implements Serializable
         if(imoveis.containsKey(im.getId()))
             throw new ImovelExisteException("Imovel ja se encontra na base de dados");
 
-        imoveis.put(im.getId(), im.clone());
+        imoveis.put(im.getId(), im); //.clone()
         Vendedor v = (Vendedor) logged;
         v.registaImovel(im.getId());
     }
@@ -319,6 +320,7 @@ public class Imobiliaria implements Serializable
          {
              Vendedor v = it.next();
              Set<String> ids = v.getImoveisEmVenda();
+             ids.addAll(v.getImoveisVendidos());
 
              for(String id: ids)
              {
@@ -359,20 +361,20 @@ public class Imobiliaria implements Serializable
      * @param password Password de um possivel utilizador
      * @throws SemAutorizacaoException, UtilizadorInexistenteException
      */
-    public void iniciaSessao(String email, String password) throws SemAutorizacaoException, UtilizadorInexistenteException
+    public void iniciaSessao(String email, String password) throws SemAutorizacaoException
     {/*
         if(logged != null)
             throw new SessaoJaIniciadaException("Ja tem sessao iniciada");
        */ 
         Utilizador u;
         if((u = utilizadores.get(email)) == null)
-            throw new UtilizadorInexistenteException("Utilizador com email:"+email+" nao existe");
+            throw new SemAutorizacaoException("Email incorrecto!");
         else
         {
             if(u.verificaPassword(password))
-                logged = u; /*Clone??*/
+                logged = u;
             else
-                throw new SemAutorizacaoException("Password incorrecta");
+                throw new SemAutorizacaoException("Password incorrecta!");
         }
     }
 

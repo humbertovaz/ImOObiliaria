@@ -95,7 +95,8 @@ public class ImobiliariaApp
                                 "Iniciar Sessão",
                                 "Consultar a lista de todos os imoveis de um dado tipo",
                                 "Consultar a lista de todos os imoveis habitáveis",
-                                "Obter um mapeamento entre todos os imoveis e os respectivos vendedores"};
+                                "Obter um mapeamento entre todos os imoveis e os respectivos vendedores",
+                                "Gravar estado"};
 
         String[] opComprMenu = { "Marcar um imovel como favorito",
                                  "Consultar imoveis favoritos",
@@ -103,7 +104,8 @@ public class ImobiliariaApp
                                  opMainMenu[3],
                                  opMainMenu[4],
                                  "Entrar no leilao",
-                                 "Fechar Sessão" };
+                                 opMainMenu[5],
+                                 "Fechar Sessão"};
 
         String[] opVendMenu = { "Colocar um imovel á venda",
                                 "Obter lista das ultimas 10 consultas",
@@ -114,6 +116,7 @@ public class ImobiliariaApp
                                 opMainMenu[4],
                                 "Criar um Leilao",
                                 "Iniciar leilao",
+                                opMainMenu[5],
                                 "Fechar Sessão"};
 
         String[] opUserMenu = { "Registar Comprador",
@@ -125,11 +128,11 @@ public class ImobiliariaApp
                                   "Registar Loja (habitável)",
                                   "Registar Terreno",};
 
-        mainMenu = new Menu(opMainMenu);
-        compradorMenu = new Menu(opComprMenu);
-        vendedorMenu = new Menu(opVendMenu);
-        tipoUserMenu = new Menu(opUserMenu);
-        tipoImovelMenu = new Menu(opImovelMenu);
+        mainMenu = new Menu(opMainMenu, "Menu Principal");
+        compradorMenu = new Menu(opComprMenu, "Menu Comprador");
+        vendedorMenu = new Menu(opVendMenu, "Menu Vendedor");
+        tipoUserMenu = new Menu(opUserMenu, "Registar utilizador");
+        tipoImovelMenu = new Menu(opImovelMenu, "Registar Imovel");
     }
 
     public static void carregarDados()
@@ -172,6 +175,9 @@ public class ImobiliariaApp
             case 5:
                 opGetMapeamento();
                 break;
+            case 6:
+                opGravaEstado();
+                break;
             default: 
                 break;
         }
@@ -204,6 +210,9 @@ public class ImobiliariaApp
                 opAdicionaComprador();
                 break;
             case 7:
+                opGravaEstado();
+                break;
+            case 8:
                 opFechaSessao();
                 cod = 0;
                 break;
@@ -248,6 +257,9 @@ public class ImobiliariaApp
                 opIniciaLeilao();
                 break;
             case 10:
+                opGravaEstado();
+                break;
+            case 11:
                 opFechaSessao();
                 cod = 0;
                 break;
@@ -258,6 +270,16 @@ public class ImobiliariaApp
         return cod;
     }
 
+    public static void opGravaEstado()
+    {
+        String standard = "Imobiliaria.ser";
+        try{
+            imobiliaria.gravaObj(standard);
+            imobiliaria.log("log.txt", true);
+        }catch(IOException e) {System.out.println(e.getMessage());}
+        System.out.println("\nO estado atual foi guardado com sucesso em Imobiliaria.ser");
+    }
+    
     public static void opRegistarUtilizador()
     {
         int op;
@@ -323,8 +345,7 @@ public class ImobiliariaApp
             imobiliaria.iniciaSessao(email, pass);
 
         }catch(NoSuchElementException e) { System.err.println("Linha em branco\n"); }
-         catch(SemAutorizacaoException e) { System.out.println("Password incorrecta!\n"); }
-         catch(UtilizadorInexistenteException e) {System.out.println("Utilizador Inexistente ou email incorrecto!\n");}
+         catch(SemAutorizacaoException e) { System.out.println(e.getMessage()); }
         
          if(imobiliaria.isCompradorLogged())
             cod = 1;

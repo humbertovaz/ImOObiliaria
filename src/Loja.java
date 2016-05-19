@@ -12,10 +12,10 @@ Existem, no entanto, algumas lojas que possuem parte habitacional. Para estas
 deverá ser registada a informação guardada para os apartamentos.
  */
 public class Loja extends Imovel implements Serializable {
-    int area;
-    boolean wc; //1 -Sim, 0-Nao;
-    String tipoNegocio;
-    int numeroDePorta;
+    private int area;
+    private boolean wc;
+    private String tipoNegocio;
+    private int numeroDePorta;
 
     /**
      * Loja Constructor

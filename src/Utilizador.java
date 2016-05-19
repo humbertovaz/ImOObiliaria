@@ -17,7 +17,7 @@ public abstract class Utilizador implements Comparable, Serializable {
 	private String nome;
 	private String password;
 	private String morada;
-    GregorianCalendar dataNascimento;
+    private GregorianCalendar dataNascimento;
     
     /**
      * Utilizador Constructor
@@ -60,7 +60,7 @@ public abstract class Utilizador implements Comparable, Serializable {
     
     public String getEmail() { return email; }
     public String getNome() { return nome; }
-    private String getPassword() { return password; }
+    public String getPassword() { return password; }
     public String getMorada() { return morada; }
     public GregorianCalendar getDataNascimento() { return (GregorianCalendar) dataNascimento.clone(); }
 
