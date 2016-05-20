@@ -139,7 +139,7 @@ public class Moradia extends Imovel implements Habitavel, Serializable {
         str.append("\nArea implantaçao: ").append(areaImplantacao);
         str.append("\nArea Total coberta: ").append(areaTotalCoberta);
         str.append("\nArea Terreno envolvente: ").append(areaTerrenoEnv);
-        str.append("\nNumero de Quartos: ").append(nrQuartos);
+        str.append("\nNumero de Quartos: ").append(nrQuartos).append("\n");
         return str.toString();
     }
 

@@ -1842,3 +1842,1231 @@ kWh Maximo: 1234.0
 Rede Esgotos: Nao
 
 ------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+Apartamento: 
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0
+Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+Apartamento: 
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+Apartamento: 
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: manuel@gmail.com
+Nome: Manuel
+Morada: Godrics Allow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: Manel
+Morada: Godrics Hollow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: manuel@gmail.com
+Nome: Manuel
+Morada: Godrics Allow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: Manel
+Morada: Godrics Hollow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Apartamento: 
+id: 7654
+rua: Leicester Road
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 2
+Numero de WC 2
+Numero de Porta 23
+Andar 3
+Tem garagem? Sim
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: manuel@gmail.com
+Nome: Manuel
+Morada: Godrics Allow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: Manel
+Morada: Godrics Hollow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Apartamento: 
+id: 7654
+rua: Leicester Road
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 2
+Numero de WC 2
+Numero de Porta 23
+Andar 3
+Tem garagem? Sim
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: manuel@gmail.com
+Nome: Manuel
+Morada: Godrics Allow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: um
+Nome: um
+Morada: um
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: Manel
+Morada: Godrics Hollow
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: dois
+Nome: dois
+Morada: dois
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+
+Imoveis à venda (id):
+1234
+2345
+3456
+4567
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: tres
+Nome: tres
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/09/1995
+
+Imoveis à venda (id):
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: quatroC
+Nome: quatro
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/09/1967
+Imoveis Favoritos (id):
+2345
+
+=============================
+
+Loja:
+id: 9876
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Bikeshop
+Numero de Porta : 234
+parte habitavel: 
+Tipo triplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 123
+Tem garagem? Nao
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Apartamento: 
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 12345.0
+Tipo simples
+Area 1234
+Numero de quartos 3
+Numero de WC 2
+Numero de Porta 123
+Andar 2
+Tem garagem? Sim
+Loja:
+id: 3456
+rua: rua
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Apartamento: 
+id: 7654
+rua: Leicester Road
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 2
+Numero de WC 2
+Numero de Porta 23
+Andar 3
+Tem garagem? Sim
+Terreno:
+
+id: 4567
+rua: rua
+Estado: venda
+precoPedido: 50000.0Area: 11343
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Nao
+
+------------- LOG ----- LOG ----- LOG -------------

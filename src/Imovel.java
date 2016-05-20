@@ -192,7 +192,7 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
         str.append("\nid: "); str.append(id);
         str.append("\nrua: "); str.append(rua);
         str.append("\nEstado: "); str.append(estado);
-        str.append("\nprecoPedido: "); str.append(precoPedido).append("\n");
+        str.append("\nprecoPedido: "); str.append(precoPedido);
         return str.toString();
     }
     

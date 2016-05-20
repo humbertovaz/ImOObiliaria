@@ -420,29 +420,32 @@ public class ImobiliariaApp
     public static Moradia criaMoradia(String id, String rua, String estado, Double precoPedido, Double precoAceite) throws TipoMoradiaInvalidoException
     {
         Scanner input = new Scanner(System.in);
-        String tipo;
+        String tipo = "";
         int areaImpl, areaTCoberta, areaTerrEnv, nrQuartos;
+        Moradia m = null;
+        try{
+            do{
+                System.out.print("Tipo de moradia (isolada/geminada/banda/gaveto): ");
+                tipo = input.nextLine();
+            }while(!Moradia.validaTipo(tipo.toLowerCase()));
         
-        do{
-            System.out.print("Tipo de moradia (isolada/geminada/banda/gaveto): ");
-            tipo = input.nextLine();
-        }while(!Moradia.validaTipo(tipo.toLowerCase()));
-        
-        System.out.print("Area implantaçao: ");
-        areaImpl = input.nextInt();
-        input.nextLine();
-        System.out.print("Area total coberta: ");
-        areaTCoberta = input.nextInt();
-        input.nextLine();
-        System.out.print("Area terreno envolvente: ");
-        areaTerrEnv = input.nextInt();
-        input.nextLine();
-        System.out.print("Numero de quartos: ");
-        nrQuartos = input.nextInt();
-        input.nextLine();
-        input.close();
-        return new Moradia(id, rua, estado, precoPedido, precoAceite, 
+            System.out.print("Area implantaçao: ");
+            areaImpl = input.nextInt();
+            input.nextLine();
+            System.out.print("Area total coberta: ");
+            areaTCoberta = input.nextInt();
+            input.nextLine();
+            System.out.print("Area terreno envolvente: ");
+            areaTerrEnv = input.nextInt();
+            input.nextLine();
+            System.out.print("Numero de quartos: ");
+            nrQuartos = input.nextInt();
+            input.nextLine();
+            m = new Moradia(id, rua, estado, precoPedido, precoAceite, 
                            tipo, areaImpl, areaTCoberta, areaTerrEnv, nrQuartos);
+        }catch(NoSuchElementException e) {System.out.println(e.getMessage());}
+            input.close();
+        return m;
     }
     
     public static Apartamento criaApartamento(String id, String rua, String estado, Double precoPedido, Double precoAceite)
