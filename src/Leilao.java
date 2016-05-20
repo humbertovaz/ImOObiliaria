@@ -25,7 +25,7 @@ public class Leilao implements Serializable
     private String leiloeiro;
     private String paraVenda;
     private double precoBase;
-    private Map<Tuplo<Licitador, Long>, Double> licitadores; // (id,min,proxLicitacao) -> valorLicitaçao
+    private Map<Tuplo<Licitador, Long>, Double> licitadores;
      
     public Leilao()
     {
@@ -38,6 +38,15 @@ public class Leilao implements Serializable
     {
         terminado = false;
         this.leiloeiro = leiloeiro;
+        licitadores = new HashMap<>();
+    }
+    
+    public Leilao(String leiloeiro, Imovel im)
+    {
+        terminado = false;
+        this.leiloeiro = leiloeiro;
+        paraVenda = im.getId();
+        precoBase = im.getPrecoAceite();
         licitadores = new HashMap<>();
     }
 
@@ -62,12 +71,8 @@ public class Leilao implements Serializable
         licitadores = new HashMap<>(licit);
     }
 
-    public void iniciaLeilao(Imovel im, int horas) throws InterruptedException, IOException, LeilaoSemLicitadoresException
+    public void iniciaLeilao(int horas) throws InterruptedException, IOException, LeilaoSemLicitadoresException
     {
-        /*Horas -> Minutos*/
-        terminado = false;
-        paraVenda = im.getId();
-        precoBase = im.getPrecoAceite();
         long time = System.currentTimeMillis();
         finalLeilao = time + (horas * 60 * 1000);
         
@@ -79,8 +84,6 @@ public class Leilao implements Serializable
             t.setSnd(new Long(time));
             licitadores.put(t, new Double(precoBase));
         }
-        
-        simulaLeilao(System.out);
     }
     
     public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos)
@@ -160,6 +163,23 @@ public class Leilao implements Serializable
         
         terminado = true;
         return winner;
+    }
+    
+    public String infoLeilao()
+    {
+        StringBuilder str = new StringBuilder();
+        str.append("Leiloeiro: ").append(leiloeiro);
+        str.append("Imovel em leilao: ").append(paraVenda);
+        str.append("Compradores ja no leilao:\n");
+        if(licitadores.isEmpty())
+            str.append("Ainda nao entraram compradores no leilao!");
+        else
+        {
+            for(Tuplo<Licitador, Long> t: licitadores.keySet())
+                str.append(t.fst().getIdComprador()).append(";\n");
+        }
+        
+        return str.toString();
     }
     
     private String inicio()

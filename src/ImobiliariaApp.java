@@ -796,19 +796,35 @@ public class ImobiliariaApp
     
     public static void opCriaLeilao()
     {
+        Scanner input = new Scanner(System.in);
+        String id;
         try{
-            imobiliaria.criaLeilao();
+            System.out.print("ID do imovel a leilao: ");
+            id = input.nextLine();
+            imobiliaria.criaLeilao(imobiliaria.getImovelFromId(id));
+            System.out.println("Leilao criado com sucesso!");
         }catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
-        System.out.println("Leilao criado com sucesso!");
+         catch(ImovelInexistenteException e) {System.out.println(e.getMessage());}
+        
     }
     
     public static void opAdicionaComprador()
     {
         Scanner input = new Scanner(System.in);
-        String email;
+        String email, resp;
         double limite, incrementos, minutos;
         
+        
         try{
+            imobiliaria.getInfoLeilao();
+            do{
+                System.out.print("Pretende entrar no leilao? ([S]im|[N]ao)");
+                resp = input.nextLine().toLowerCase();
+            }while(!resp.equals("sim") && !resp.equals("nao")
+                 &&!resp.equals("s") && !resp.equals("n"));
+            
+            if(resp.equals("nao") || resp.equals("n")) return;
+            
             email = imobiliaria.loggedEmail();
             System.out.print("Limite: ");
             limite = input.nextDouble();
@@ -825,21 +841,18 @@ public class ImobiliariaApp
         }catch(NoSuchElementException e) {System.out.println(e.getMessage());}
          catch(LeilaoTerminadoException e) {System.out.println(e.getMessage());}
          catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
+         catch(LeilaoInexistenteException e) {System.out.println(e.getMessage());}
     }
     
     public static void opIniciaLeilao()
     {
         Scanner input = new Scanner(System.in);
-        String id; int tempo;
+        int tempo;
         try{
-            System.out.print("ID do imovel a leilao: ");
-            id = input.nextLine();
             System.out.print("Duraçao: ");
             tempo = input.nextInt();
-            System.out.println("Leilao a decorrer...");
-            imobiliaria.iniciaLeilao(imobiliaria.getImovelFromId(id), tempo);
+            imobiliaria.iniciaLeilao(tempo, System.out);
             Comprador c = imobiliaria.encerraLeilao();
-            imobiliaria.setEstado(id, "reservado");
             System.out.println("O Vencedor do leilao foi o utilizador com email: "+c.getEmail());
         }catch(SemAutorizacaoException e){System.out.println(e.getMessage());}
          catch(InterruptedException e){System.out.println(e.getMessage());}
@@ -847,6 +860,13 @@ public class ImobiliariaApp
          catch(ImovelInexistenteException e) {System.out.println(e.getMessage());}
          catch(LeilaoSemLicitadoresException e) {System.out.println(e.getMessage());}
          catch(LeilaoInexistenteException e) {System.out.println(e.getMessage());}
-         catch(EstadoInvalidoException e) {System.out.println(e.getMessage());}
+
+         input.close();
+         
+         try{
+             imobiliaria.setEstado(imobiliaria.imovelEmLeilao() , "reservado");
+         }catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
+          catch(ImovelInexistenteException e) {System.out.println(e.getMessage());}
+          catch(EstadoInvalidoException e) {System.out.println(e.getMessage());}
     }
 }

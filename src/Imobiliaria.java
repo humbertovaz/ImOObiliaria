@@ -10,6 +10,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.FileInputStream;
 import java.io.FileWriter;
+import java.io.OutputStream;
 
 import java.util.List;
 import java.util.Set;
@@ -67,19 +68,33 @@ public class Imobiliaria implements Serializable
      * Funçao que possibilita a um vendedor criar um leilao
      * @trows SemAutorizacaoException
      */
-    public void criaLeilao() throws SemAutorizacaoException
+    public void criaLeilao(Imovel im) throws SemAutorizacaoException, ImovelInexistenteException
     {
         if(logged == null || !(logged instanceof Vendedor))
             throw new SemAutorizacaoException("Nao tem autorizacao para criar um leilao!");
         
-        leilao = new Leilao(logged.getEmail());
+        Vendedor v = (Vendedor) logged;
+        
+        if(im == null)
+            throw new ImovelInexistenteException("Imovel inexistente!");
+        
+        if(!(imoveis.containsKey(im.getId())))
+            throw new ImovelInexistenteException("Imovel inexistente!");
+       
+        if(!(v.emVenda(im.getId())))
+            throw new ImovelInexistenteException("Imovel nao e seu para vender!");
+       
+        if((im.estaReservado()) || (im.foiVendido()))
+            throw new SemAutorizacaoException("Nao pode leiloar este imovel, verifique o seu estado!");
+            
+        leilao = new Leilao(logged.getEmail(), im);
     }
     
     /**
      * Funçao que inicia/arranca o leilao criado pelo vendedor loggado no sistema
      * @throws ImovelInexistenteException, SemAutorizacaoException, InterruptedException, IOException, LeilaoSemLicitadoresException, LeilaoInexistenteException
      */
-    public void iniciaLeilao(Imovel im, int horas) throws ImovelInexistenteException, SemAutorizacaoException, InterruptedException, IOException, LeilaoSemLicitadoresException, LeilaoInexistenteException
+    public void iniciaLeilao(int horas, OutputStream arg) throws ImovelInexistenteException, SemAutorizacaoException, InterruptedException, IOException, LeilaoSemLicitadoresException, LeilaoInexistenteException
     {
         if(leilao == null)
             throw new LeilaoInexistenteException("Ainda nao foi criado um leilao!");
@@ -89,17 +104,26 @@ public class Imobiliaria implements Serializable
         
         Vendedor v = (Vendedor) logged;
            
-        if(!(imoveis.containsKey(im.getId())) || !(v.emVenda(im.getId())))
+        if(!(imoveis.containsKey(leilao.getParaVenda())) || !(v.emVenda(leilao.getParaVenda())))
             throw new ImovelInexistenteException("Imovel inexistente ou nao e seu para vender!");
         
         if(!(logged.getEmail().equals(leilao.getLeiloeiro())))
            throw new SemAutorizacaoException("Nao e o seu leilao");
-       
-        if(!(im.estaReservado()) || !(im.foiVendido()))
-            throw new SemAutorizacaoException("Nao pode leiloar este imovel, verifique o seu estado!");
            
-        leilao.iniciaLeilao(im, horas);
-        leilao.simulaLeilao(System.out);
+        leilao.iniciaLeilao(horas);
+        leilao.simulaLeilao(arg);
+    }
+    
+    public String imovelEmLeilao()
+    {
+        return leilao.getParaVenda();
+    }
+    
+    public String getInfoLeilao() throws LeilaoInexistenteException
+    {
+        if(leilao == null)
+            throw new LeilaoInexistenteException("Nao existem leiloes!");
+        return leilao.infoLeilao();
     }
     
     /**
@@ -160,7 +184,8 @@ public class Imobiliaria implements Serializable
         for(String id: emVenda)
         {
             Imovel i = imoveis.get(id);
-            consultas.addAll(i.getConsultas());
+            if(i.getEstado().equals("venda"))
+                consultas.addAll(i.getConsultas());
         }
         
         Collections.sort(consultas);
@@ -190,8 +215,8 @@ public class Imobiliaria implements Serializable
 
         Vendedor v = (Vendedor) logged;
 
-        if(!(v.emVenda(idImovel)) || !(v.vendido(idImovel)))
-            throw new SemAutorizacaoException("Imovel com id: "+idImovel+"nao e seu!");
+        if(!(v.emVenda(idImovel)) && !(v.vendido(idImovel)))
+            throw new SemAutorizacaoException("Imovel com id: "+idImovel+" nao e seu!");
         
         imoveis.get(idImovel).setEstado(estado);
         
@@ -251,10 +276,10 @@ public class Imobiliaria implements Serializable
 
         Comprador c = (Comprador) logged;
         Set<String> ids = c.getFavoritos();
-
+        
         //Ordem natural dos Imoveis e por preço
         return ids.stream().filter(i -> imoveis.containsKey(i))
-                           .map(i -> imoveis.get(i))
+                           .map(i -> {Imovel imv = imoveis.get(i); imv.registaConsulta(logged.getEmail(), new GregorianCalendar()); return imv; })
                            .collect(Collectors.toCollection(TreeSet::new));
     }
     
