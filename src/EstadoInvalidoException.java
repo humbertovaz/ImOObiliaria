@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class EstadoInvalidoException here.
+ * Excepçao atirada quando se tenta mudar o estado de um imovel para um estado invalido
  * 
  * @author (your name) 
  * @version (a version number or a date)

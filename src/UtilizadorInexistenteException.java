@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class UtilizadorInexistenteException here.
+ * Excepçao atirada quando e referido um utilizador que nao existe.
  * 
  * @author (your name) 
  * @version (a version number or a date)

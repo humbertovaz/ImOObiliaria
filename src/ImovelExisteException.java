@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class ImovelExisteException here.
+ * Excepçao atirada quando queremos inserir no sistema um imovel que ja existe.
  * 
  * @author (your name) 
  * @version (a version number or a date)

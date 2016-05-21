@@ -71,6 +71,11 @@ public class Leilao implements Serializable
         licitadores = new HashMap<>(licit);
     }
 
+    /**
+     * Esta funçao inicia o leilao, determina o tempo em ms em que o leilao vai acabar e inicializa todos os valores iniciais ao precoBase
+     * @param horas Duraçao do leilao
+     * @throws LeilaoSemLicitadoresException
+     */
     public void iniciaLeilao(int horas) throws InterruptedException, IOException, LeilaoSemLicitadoresException
     {
         long time = System.currentTimeMillis();
@@ -86,6 +91,13 @@ public class Leilao implements Serializable
         }
     }
     
+    /**
+     * Funçao que adiciona um comprador ao leilao, transforma-o em licitador, insere-o num tuplo e de seguida na HashMap
+     * @param idComprador EMail do comprador
+     * @param limite Valor limite de que o comprador pretende licitar
+     * @param incrementos Incrementos entre licitaçoes
+     * @param minutos Intervalo entre licitaçoes
+     */
     public void adicionaComprador(String idComprador, double limite, double incrementos, double minutos)
     {
         Licitador l = new Licitador(idComprador, limite, incrementos, minutos);
@@ -93,6 +105,10 @@ public class Leilao implements Serializable
         licitadores.put(tuplo, null);
     }
     
+    /**
+     * Simula o leilao. Enquanto nao for a hora de terminar o leilao percorremos os licitadores e vemos se esta na hora deles de licitar se estiver realizamos a nova licitaçao, ate acabar o tempo do leilao
+     * @param arg OutputStream para onde queremos escrever as constantes licitaçoes que vao acontecendo no leilao
+     */
     public void simulaLeilao(OutputStream arg) throws IOException, InterruptedException
     {
         double maiorLicit = precoBase;
@@ -144,6 +160,10 @@ public class Leilao implements Serializable
         }
     }
     
+    /**
+     * Funçao que encerra o leilao, percorre os licitadores para ver qual deles realizou a maior licitaçao
+     * @return Email (id) do vencedor
+     */
     public String encerraLeilao()
     {
         Iterator<Map.Entry<Tuplo<Licitador, Long>, Double>> it = licitadores.entrySet().iterator();
@@ -164,6 +184,10 @@ public class Leilao implements Serializable
         return winner;
     }
     
+    /**
+     * Uma funçao que da um bocado de informaçao sobre o leilao ao comprador antes de entrar no mesmo
+     * @param informaçao sobre o leilao
+     */
     public String infoLeilao()
     {
         StringBuilder str = new StringBuilder();

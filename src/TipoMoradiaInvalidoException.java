@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class TipoMoradiaInvalidoException here.
+ * Excepçao atirada quando e tentado atribuir um tipo invalido a uma moradia.
  * 
  * @author (your name) 
  * @version (a version number or a date)

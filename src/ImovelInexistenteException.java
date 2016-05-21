@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class ImovelInexistenteException here.
+ * Excepçao atirada quando e referido um imovel que nao existe.
  * 
  * @author (your name) 
  * @version (a version number or a date)

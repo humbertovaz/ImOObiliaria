@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class UtilizadorExistenteException here.
+ * Excepçao atirada quando se tenta registar um utilizador que ja existe no sistema.
  * 
  * @author (your name) 
  * @version (a version number or a date)

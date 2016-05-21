@@ -11451,3 +11451,259 @@ Tipo de Negocio: Surf
 Numero de Porta : 3
 
 ------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6543
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/08/1954
+
+Imoveis à venda (id):
+8371
+9318
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua das cenas
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 12345
+Area Total coberta: 1234
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+Terreno:
+
+id: 6543
+rua: rua do terreno
+Estado: reservado
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 7654
+rua: rua do apart
+Estado: venda
+precoPedido: 12000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 1
+Numero de Porta 12
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9318
+rua: rua do terreno
+Estado: venda
+precoPedido: 34000.0Area: 12345
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Loja:
+id: 8371
+rua: rua da loja
+Estado: venda
+precoPedido: 20000.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Surf
+Numero de Porta : 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6543
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/08/1954
+
+Imoveis à venda (id):
+8371
+9318
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua das cenas
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 12345
+Area Total coberta: 1234
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+Terreno:
+
+id: 6543
+rua: rua do terreno
+Estado: reservado
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 7654
+rua: rua do apart
+Estado: venda
+precoPedido: 12000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 1
+Numero de Porta 12
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9318
+rua: rua do terreno
+Estado: venda
+precoPedido: 34000.0Area: 12345
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Loja:
+id: 8371
+rua: rua da loja
+Estado: venda
+precoPedido: 20000.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Surf
+Numero de Porta : 3
+
+------------- LOG ----- LOG ----- LOG -------------

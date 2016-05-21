@@ -2,7 +2,7 @@ package src;
 
 
 /**
- * Write a description of class SemAutorizacaoException here.
+ * Excepçao atirada quando se tenta realizar alguma acçao que nao faz parte do conjunto de funcionalidades de um determinado utilizador
  * 
  * @author (your name) 
  * @version (a version number or a date)

@@ -89,6 +89,9 @@ public class ImobiliariaApp
         System.out.println("Volte sempre...");
     }
     
+    /**
+     * Funçao que carrega os menus.
+     */
     public static void loadMenus()
     {
         String[] opMainMenu = { "Registar Utilizador",
@@ -135,6 +138,9 @@ public class ImobiliariaApp
         tipoImovelMenu = new Menu(opImovelMenu, "Registar Imovel");
     }
 
+    /**
+     * Funçao que le os dados de um estado gravado em ficheiro.
+     */
     public static void carregarDados()
     {
         try{
@@ -154,6 +160,10 @@ public class ImobiliariaApp
         }
     }
 
+    /**
+     * Metodo que mapeia a opçao introduzida com a respectiva funçao (Menu main)
+     * @param op Opçao escolhida pelo utilizador
+     */
     private static int executaOpcaoMain(int op)
     {
         int cod = 0;
@@ -185,6 +195,10 @@ public class ImobiliariaApp
         return cod;
     }
 
+    /**
+     * Metodo que mapeia a opçao introduzida com a respectiva funçao (Menu comprador)
+     * @param op Opçao escolhida pelo utilizador
+     */
     private static int executaOpcaoComprador(int op)
     {
         int cod = 1;
@@ -223,6 +237,10 @@ public class ImobiliariaApp
         return cod;
     }
     
+    /**
+     * Metodo que mapeia a opçao introduzida com a respectiva funçao (Menu vendedor)
+     * @param op Opçao escolhida pelo utilizador
+     */
     private static int executaOpcaoVendedor(int op)
     {
         int cod = 1;
@@ -270,6 +288,9 @@ public class ImobiliariaApp
         return cod;
     }
 
+    /**
+     * Funçao que grava o estado atual para ficheiro.
+     */
     public static void opGravaEstado()
     {
         String standard = "Imobiliaria.ser";
@@ -280,6 +301,9 @@ public class ImobiliariaApp
         System.out.println("\nO estado atual foi guardado com sucesso em Imobiliaria.ser");
     }
     
+    /**
+     * Funçao que pede todas as informaçoes necessarias ao utilizador para criar um utilizador e regista-lo, tanto Comprador como Vendedor.
+     */
     public static void opRegistarUtilizador()
     {
         int op;
@@ -329,6 +353,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que pede informaçao necessaria ao utilizador para o mesmo iniciar sessao no sistema
+     */
     public static int opIniciaSessao()
     {
         Scanner input = new Scanner(System.in);
@@ -356,12 +383,18 @@ public class ImobiliariaApp
         return cod;
     }
     
+    /**
+     * Funçao que fecha a sessao do utilizador.
+     */
     public static void opFechaSessao()
     {
         System.out.println("A fechar sessao...");
         imobiliaria.fechaSessao();
     }
     
+    /**
+     * Funçao que pede toda a informaçao necessaria ao utilizador para que possa criar um Imovel e regista-lo no sistema
+     */
     public static void opRegistaImovel()
     {
         int op;
@@ -417,6 +450,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que cria uma Moradia conforme os dados inseridos pelo utilizador
+     */
     public static Moradia criaMoradia(String id, String rua, String estado, Double precoPedido, Double precoAceite) throws TipoMoradiaInvalidoException
     {
         Scanner input = new Scanner(System.in);
@@ -448,6 +484,10 @@ public class ImobiliariaApp
         return m;
     }
     
+    
+    /**
+     * Funçao que cria um Apartamento conforme os dados inseridos pelo utilizador
+     */
     public static Apartamento criaApartamento(String id, String rua, String estado, Double precoPedido, Double precoAceite)
     {
         Scanner input = new Scanner(System.in);
@@ -488,6 +528,10 @@ public class ImobiliariaApp
                                tipo, area, nrQuartos, nrWC, nrPorta, andar, garagem);
     }
     
+    
+    /**
+     * Funçao que cria uma Loja conforme os dados inseridos pelo utilizador
+     */
     public static Loja criaLojaNH(String id, String rua, String estado, Double precoPedido, Double precoAceite)
     {
         Scanner input = new Scanner(System.in);
@@ -516,6 +560,10 @@ public class ImobiliariaApp
                         area, wc, tipoNegocio, nrPorta);
     }
     
+    
+    /**
+     * Funçao que cria uma LojaHabitavel conforme os dados inseridos pelo utilizador
+     */
     public static LojaHabitavel criaLojaH(String id, String rua, String estado, Double precoPedido, Double precoAceite)
     {
         Apartamento ap = criaApartamento(id, rua, estado,precoPedido, precoAceite);
@@ -524,6 +572,10 @@ public class ImobiliariaApp
         return new LojaHabitavel(lj, ap);
     }
     
+    
+    /**
+     * Funçao que cria um Terreno conforme os dados inseridos pelo utilizador
+     */
     public static Terreno criaTerreno(String id, String rua, String estado, Double precoPedido, Double precoAceite)
     {
         Scanner input = new Scanner(System.in);
@@ -559,6 +611,9 @@ public class ImobiliariaApp
                            area, tipoConstr, diametro, kWhmax, redeEsgotos);
     }
     
+    /**
+     * Funçao que imprime as 10 ultimas consultas feitas aos imoveis em venda de um vendedor.
+     */
     public static void opGetConsultas()
     {
         List<Consulta> consultas = null; 
@@ -580,6 +635,9 @@ public class ImobiliariaApp
         }
     }
     
+    /**
+     * Funçao que altera o estado de um imovel inserido pelo utilizador
+     */
     public static void opSetEstado()
     {
         String id, estado;
@@ -600,6 +658,9 @@ public class ImobiliariaApp
          input.close();
     }
     
+    /**
+     * Funçao que imprime uma lista de ID's dos imoveis mais consultados do vendedor que a chama
+     */
     public static void opGetTopImoveis()
     {
         Scanner input = new Scanner(System.in);
@@ -628,6 +689,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que imprime a lista dos imoveis de um dado tipo inserido pelo utilizador ate um certo preço tambem escolhido pelo utilizador
+     */
     public static void opGetImovel()
     {
         Scanner input = new Scanner(System.in);
@@ -658,6 +722,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que imprime todos os imoveis habitaveis do sistema ate um certo preço escolhido pelo utilizador
+     */
     public static void opGetHabitavel()
     {
         Scanner input = new Scanner(System.in);
@@ -687,6 +754,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que imprime o mapeamento de todos os imoveis com os respectivos vendedores
+     */
     public static void opGetMapeamento()
     {
         Map<Imovel, Vendedor> map = imobiliaria.getMapeamentoImoveis();
@@ -743,6 +813,9 @@ public class ImobiliariaApp
         }
     }
     
+    /**
+     * Funçao que marca como favorito um imovel escolhido pelo utilizador
+     */
     public static void opSetFavorito()
     {
         Scanner input = new Scanner(System.in);
@@ -760,6 +833,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que imprime todos os imoveis favoritos de um utilizador
+     */
     public static void opGetFavoritos()
     {
         Scanner input = new Scanner(System.in);
@@ -786,6 +862,9 @@ public class ImobiliariaApp
         input.close();
     }
     
+    /**
+     * Funçao que valida o formato de uma data em String
+     */
     public static GregorianCalendar validateDate(String data) throws ParseException
     {
         String format = "yyyy/MM/dd";
@@ -797,6 +876,9 @@ public class ImobiliariaApp
         return (GregorianCalendar) cal;
     }
     
+    /**
+     * Funçao que cria leilao sobre um imovel escolhido pelo utilizador
+     */
     public static void opCriaLeilao()
     {
         Scanner input = new Scanner(System.in);
@@ -811,6 +893,9 @@ public class ImobiliariaApp
         
     }
     
+    /**
+     * Funçao que permite a um comprador entrar no leilao existente.
+     */
     public static void opAdicionaComprador()
     {
         Scanner input = new Scanner(System.in);
@@ -847,6 +932,9 @@ public class ImobiliariaApp
          catch(LeilaoInexistenteException e) {System.out.println(e.getMessage());}
     }
     
+    /**
+     * Funçao que inicia o leilao
+     */
     public static void opIniciaLeilao()
     {
         Scanner input = new Scanner(System.in);
