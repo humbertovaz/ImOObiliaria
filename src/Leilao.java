@@ -110,7 +110,6 @@ public class Leilao implements Serializable
                     {    
                         if(l.equals(winner))
                         {
-                            arg.write(passaLicit(l).getBytes());
                             long nextLicit = System.currentTimeMillis() + (long)(l.getMinutos()*1000);
                             t.setSnd(new Long(nextLicit));
                             licitadores.put(t, lastLicit);
@@ -136,7 +135,7 @@ public class Leilao implements Serializable
                             long nextLicit = System.currentTimeMillis() + (long)(l.getMinutos()*1000);
                             t.setSnd(new Long(nextLicit));
                             licitadores.put(t, new Double(newLicit));
-                            arg.write(licitacao(l, maiorLicit).getBytes());
+                            arg.write(licitacao(l, maiorLicit).getBytes()); arg.flush();
                         }
                     }
                 }
@@ -168,11 +167,12 @@ public class Leilao implements Serializable
     public String infoLeilao()
     {
         StringBuilder str = new StringBuilder();
-        str.append("Leiloeiro: ").append(leiloeiro);
-        str.append("Imovel em leilao: ").append(paraVenda);
-        str.append("Compradores ja no leilao:\n");
+        str.append("\nLeiloeiro: ").append(leiloeiro);
+        str.append("\nImovel em leilao: ").append(paraVenda);
+        str.append("\nPreço base: ").append(precoBase);
+        str.append("\nCompradores ja no leilao:\n");
         if(licitadores.isEmpty())
-            str.append("Ainda nao entraram compradores no leilao!");
+            str.append("Ainda nao entraram compradores no leilao!\n");
         else
         {
             for(Tuplo<Licitador, Long> t: licitadores.keySet())

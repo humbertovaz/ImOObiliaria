@@ -5110,3 +5110,6344 @@ Area Terreno envolvente: 1234
 Numero de Quartos: 3
 
 ------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Tem garagem? Sim
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Sim
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: reservado
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: reservado
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+6789
+8765
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+6789
+8765
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1995
+
+Imoveis à venda (id):
+1024
+2948
+3579
+
+Imoveis vendidos (id):
+
+============================
+
+==========Vendedor==========
+
+Email: 3
+Nome: 3
+Morada: 3
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4567
+6789
+8765
+9876
+
+Imoveis vendidos (id):
+2345
+4321
+5432
+
+============================
+
+==========Comprador==========
+
+Email: 4
+Nome: 4
+Morada: 4
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 5
+Nome: 5
+Morada: 5
+Data de nascimento (dd/MM/yyyy): 12/12/1990
+Imoveis Favoritos (id):
+1234
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: 6
+Nome: 6
+Morada: 6
+Data de nascimento (dd/MM/yyyy): 11/11/1996
+Imoveis Favoritos (id):
+1234
+4567
+6789
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+1024
+
+=============================
+
+Apartamento: 
+id: 3579
+rua: rua do apartament0
+Estado: venda
+precoPedido: 12345.0
+Tipo duplex
+Area 1234
+Numero de quartos 3
+Numero de WC 3
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 9876
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 8765
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 1234
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 2345
+rua: rua
+Estado: venda
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 1234.0
+kWh Maximo: 1234.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 4321
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 3
+Numero de Porta 3
+Andar 3
+Garagem: Tem
+Moradia: 
+id: 5432
+rua: rua
+Estado: venda
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Terreno:
+
+id: 1024
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 4567
+rua: rua
+Estado: reservado
+precoPedido: 1234.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 6789
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Loja:
+id: 2948
+rua: rua da loja
+Estado: reservado
+precoPedido: 12345.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Pesca
+Numero de Porta : 12
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/12/1995
+
+Imoveis à venda (id):
+1
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 123
+Area Total coberta: 1231
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/12/1995
+
+Imoveis à venda (id):
+1
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 123
+Area Total coberta: 1231
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/12/1995
+
+Imoveis à venda (id):
+1
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1
+rua: rua da moradia
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 123
+Area Total coberta: 1231
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+4321
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6789
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+4321
+9876
+
+=============================
+
+Terreno:
+
+id: 9876
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 12312
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 1234
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua da moradia
+Estado: venda
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 2
+Apartamento: 
+id: 6789
+rua: rua do apartamento
+Estado: venda
+precoPedido: 30000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+4321
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6789
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+4321
+9876
+
+=============================
+
+==========Comprador==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1956
+Imoveis Favoritos (id):
+
+=============================
+
+Terreno:
+
+id: 9876
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 12312
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 1234
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua da moradia
+Estado: venda
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 2
+Apartamento: 
+id: 6789
+rua: rua do apartamento
+Estado: venda
+precoPedido: 30000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+4321
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6789
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+4321
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: vend2@gmail.com
+Nome: vendedor2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 23/03/1955
+
+Imoveis à venda (id):
+1927
+6294
+8476
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1956
+Imoveis Favoritos (id):
+
+=============================
+
+Loja:
+id: 8476
+rua: rua da lojaH
+Estado: venda
+precoPedido: 23400.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Roupa
+Numero de Porta : 123
+parte habitavel: 
+Tipo duplex
+Area 1234
+Numero de quartos 2
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9876
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 12312
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 1234
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua da moradia
+Estado: venda
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 2
+Loja:
+id: 1927
+rua: rua da loja
+Estado: venda
+precoPedido: 14500.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Apartamento: 
+id: 6789
+rua: rua do apartamento
+Estado: venda
+precoPedido: 30000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 6294
+rua: rua do terreno
+Estado: venda
+precoPedido: 12000.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+4321
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6789
+9876
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: manel
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 21/08/1995
+Imoveis Favoritos (id):
+4321
+9876
+
+=============================
+
+==========Vendedor==========
+
+Email: vend2@gmail.com
+Nome: vendedor2
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 23/03/1955
+
+Imoveis à venda (id):
+1927
+6294
+8476
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1956
+Imoveis Favoritos (id):
+
+=============================
+
+Loja:
+id: 8476
+rua: rua da lojaH
+Estado: venda
+precoPedido: 23400.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Roupa
+Numero de Porta : 123
+parte habitavel: 
+Tipo duplex
+Area 1234
+Numero de quartos 2
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9876
+rua: rua do terreno
+Estado: venda
+precoPedido: 12345.0Area: 12312
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Moradia: 
+id: 1234
+rua: rua da moradia
+Estado: reservado
+precoPedido: 1234.0
+Tipo: isolada
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua da moradia
+Estado: venda
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1234
+Numero de Quartos: 2
+Loja:
+id: 1927
+rua: rua da loja
+Estado: venda
+precoPedido: 14500.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Farmacia
+Numero de Porta : 123
+Apartamento: 
+id: 6789
+rua: rua do apartamento
+Estado: venda
+precoPedido: 30000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 2
+Numero de Porta 123
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 6294
+rua: rua do terreno
+Estado: venda
+precoPedido: 12000.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6543
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua das cenas
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 12345
+Area Total coberta: 1234
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+Terreno:
+
+id: 6543
+rua: rua do terreno
+Estado: reservado
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 7654
+rua: rua do apart
+Estado: venda
+precoPedido: 12000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 1
+Numero de Porta 12
+Andar 3
+Garagem: Tem
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6543
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/08/1954
+
+Imoveis à venda (id):
+8371
+9318
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua das cenas
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 12345
+Area Total coberta: 1234
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+Terreno:
+
+id: 6543
+rua: rua do terreno
+Estado: reservado
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 7654
+rua: rua do apart
+Estado: venda
+precoPedido: 12000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 1
+Numero de Porta 12
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9318
+rua: rua do terreno
+Estado: venda
+precoPedido: 34000.0Area: 12345
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Loja:
+id: 8371
+rua: rua da loja
+Estado: venda
+precoPedido: 20000.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Surf
+Numero de Porta : 3
+
+------------- LOG ----- LOG ----- LOG -------------
+
+------------- LOG ----- LOG ----- LOG -------------
+
+==========Comprador==========
+
+Email: 1
+Nome: 1
+Morada: 1
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+
+=============================
+
+==========Vendedor==========
+
+Email: humberto@gmail.com
+Nome: humberto
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+
+Imoveis à venda (id):
+1234
+4321
+6543
+7654
+
+Imoveis vendidos (id):
+
+============================
+
+==========Comprador==========
+
+Email: 2
+Nome: 2
+Morada: 2
+Data de nascimento (dd/MM/yyyy): 22/10/2223
+Imoveis Favoritos (id):
+
+=============================
+
+==========Comprador==========
+
+Email: manel@gmail.com
+Nome: 1234
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 11/11/1111
+Imoveis Favoritos (id):
+1234
+
+=============================
+
+==========Vendedor==========
+
+Email: joaoV@gmail.com
+Nome: joao
+Morada: morada
+Data de nascimento (dd/MM/yyyy): 12/08/1954
+
+Imoveis à venda (id):
+8371
+9318
+
+Imoveis vendidos (id):
+
+============================
+
+Moradia: 
+id: 1234
+rua: rua
+Estado: reservado
+precoPedido: 12345.0
+Tipo: banda
+Area implantaçao: 1234
+Area Total coberta: 1234
+Area Terreno envolvente: 1314
+Numero de Quartos: 3
+Moradia: 
+id: 4321
+rua: rua das cenas
+Estado: reservado
+precoPedido: 12345.0
+Tipo: isolada
+Area implantaçao: 12345
+Area Total coberta: 1234
+Area Terreno envolvente: 1231
+Numero de Quartos: 3
+Terreno:
+
+id: 6543
+rua: rua do terreno
+Estado: reservado
+precoPedido: 1234.0Area: 1234
+Tipo de Construcao: habitacional
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Apartamento: 
+id: 7654
+rua: rua do apart
+Estado: venda
+precoPedido: 12000.0
+Tipo simples
+Area 1234
+Numero de quartos 1
+Numero de WC 1
+Numero de Porta 12
+Andar 3
+Garagem: Tem
+Terreno:
+
+id: 9318
+rua: rua do terreno
+Estado: venda
+precoPedido: 34000.0Area: 12345
+Tipo de Construcao: armazens
+Diametro Canalizacoes: 123.0
+kWh Maximo: 123.0
+Rede Esgotos: Tem
+Loja:
+id: 8371
+rua: rua da loja
+Estado: venda
+precoPedido: 20000.0Area: 1234
+Wc: Sim
+Tipo de Negocio: Surf
+Numero de Porta : 3
+
+------------- LOG ----- LOG ----- LOG -------------

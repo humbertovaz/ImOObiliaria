@@ -150,11 +150,11 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
         str.append("\nNumero de WC "); str.append(nrWC);
         str.append("\nNumero de Porta "); str.append(nrPorta);
         str.append("\nAndar "); str.append(andar);
-        str.append("\nTem garagem? "); 
+        str.append("\nGaragem: "); 
         if(garagem)
-            str.append("Sim\n");
+            str.append("Tem\n");
         else
-            str.append("Nao\n");
+            str.append("Nao tem\n");
 
         return str.toString();
     }
@@ -168,11 +168,11 @@ public class Apartamento extends Imovel implements Habitavel, Serializable {
         str.append("\nNumero de WC "); str.append(nrWC);
         str.append("\nNumero de Porta "); str.append(nrPorta);
         str.append("\nAndar "); str.append(andar);
-        str.append("\nTem garagem? "); 
+        str.append("\nGaragem: "); 
         if(garagem)
-            str.append("Sim\n");
+            str.append("Tem\n");
         else
-            str.append("Nao\n");
+            str.append("Nao tem\n");
             
         return str.toString();
     }

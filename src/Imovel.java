@@ -203,7 +203,7 @@ public abstract class Imovel implements Comparable<Imovel>, Serializable{
         
         hash = 31*hash + id.hashCode();
         hash = 31*hash + rua.hashCode();
-        //hash = 31*hash + estado.hashCode();
+        hash = 31*hash + estado.hashCode();
         aux = Double.doubleToLongBits(precoPedido);
         hash = 31*hash + (int) (aux^(aux >>> 32));
         aux = Double.doubleToLongBits(precoAceite);

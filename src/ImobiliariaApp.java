@@ -643,17 +643,18 @@ public class ImobiliariaApp
             
             /*Tentar ordenar isto por preço (comparator)*/
             im = new ArrayList<>(imobiliaria.getImovel(classe, preco));
+            if(im.isEmpty())
+            {
+                System.out.println("Nao existem Imoveis do tipo "+classe+" com preço menor ou igual a "+preco+".");
+            }
+            else{
+                System.out.println("\nImoveis (id) com preco ate "+preco+":");
+                for(Imovel i: im)
+                     System.out.println(i.toString()+"\n");
+            }
         }catch(NoSuchElementException e){System.out.println(e.getMessage());}
         
-        if(im.isEmpty())
-        {
-            System.out.println("Nao existem Imoveis com preço menor ou igual a "+preco+".");
-        }
-        else{
-            System.out.println("\nImoveis (id) com preco ate "+preco+":");
-            for(Imovel i: im)
-                System.out.println(i.toString()+"\n");
-        }
+        
         input.close();
     }
     
@@ -776,8 +777,10 @@ public class ImobiliariaApp
         {
             System.out.println("\nLista dos seus Imoveis favoritos: ");
             it = favs.iterator();
-            while(it.hasNext())
-                System.out.print(it.next().toString());
+            while(it.hasNext()){
+                Imovel im = it.next();
+                System.out.println(im.toString());
+            }
         }
         
         input.close();
@@ -816,7 +819,7 @@ public class ImobiliariaApp
         
         
         try{
-            imobiliaria.getInfoLeilao();
+            System.out.println(imobiliaria.getInfoLeilao());
             do{
                 System.out.print("Pretende entrar no leilao? ([S]im|[N]ao)");
                 resp = input.nextLine().toLowerCase();
@@ -851,6 +854,7 @@ public class ImobiliariaApp
         try{
             System.out.print("Duraçao: ");
             tempo = input.nextInt();
+            input.nextLine();
             imobiliaria.iniciaLeilao(tempo, System.out);
             Comprador c = imobiliaria.encerraLeilao();
             System.out.println("O Vencedor do leilao foi o utilizador com email: "+c.getEmail());
@@ -868,5 +872,7 @@ public class ImobiliariaApp
          }catch(SemAutorizacaoException e) {System.out.println(e.getMessage());}
           catch(ImovelInexistenteException e) {System.out.println(e.getMessage());}
           catch(EstadoInvalidoException e) {System.out.println(e.getMessage());}
+          
+          imobiliaria.apagaLeilao();
     }
 }

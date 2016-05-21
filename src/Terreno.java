@@ -131,9 +131,9 @@ public class Terreno extends Imovel implements Serializable{
         sb.append("kWh Maximo: ").append(kWhmax).append("\n");
         sb.append("Rede Esgotos: ");
         if(redeEsgotos)
-            sb.append("Sim\n");
+            sb.append("Tem\n");
         else
-            sb.append("Nao\n");
+            sb.append("Nao tem\n");
       
         return sb.toString();
     }    

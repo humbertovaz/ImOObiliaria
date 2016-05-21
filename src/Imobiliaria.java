@@ -126,6 +126,8 @@ public class Imobiliaria implements Serializable
         return leilao.infoLeilao();
     }
     
+    public void apagaLeilao() { leilao = null; }
+    
     /**
      * Funçao que permite ao comprador loggado no sistema entrar no leilao criado, caso houver algum.
      * @throws LeilaoTerminadoException, SemAutorizacaoException
@@ -277,10 +279,24 @@ public class Imobiliaria implements Serializable
         Comprador c = (Comprador) logged;
         Set<String> ids = c.getFavoritos();
         
+        TreeSet<Imovel> ts = new TreeSet<>(new Comparator<Imovel>(){
+            public int compare(Imovel i1, Imovel i2)
+            {
+                return i1.getId().compareTo(i2.getId());
+            }
+        });
+        
+        for(String id: ids) 
+        {
+            Imovel im = imoveis.get(id);
+            im.registaConsulta(logged.getEmail(), new GregorianCalendar());
+            ts.add(im);
+        }
         //Ordem natural dos Imoveis e por preço
-        return ids.stream().filter(i -> imoveis.containsKey(i))
-                           .map(i -> {Imovel imv = imoveis.get(i); imv.registaConsulta(logged.getEmail(), new GregorianCalendar()); return imv; })
-                           .collect(Collectors.toCollection(TreeSet::new));
+       /* TreeSet<Imovel> ts = ids.stream().map(i -> {Imovel imv = imoveis.get(i); imv.registaConsulta(logged.getEmail(), new GregorianCalendar()); return imv; })
+                           .collect(Collectors.toCollection(TreeSet::new));*/
+      
+       return ts;
     }
     
     /*
