@@ -1,5 +1,4 @@
 # ImOObiliaria
 
-## To do List:
-- [ ] Rever e refinar alguns métodos!!
-- [ ] Leilão
+## Project for Object Oriented Programming course
+- A real estate agency application
